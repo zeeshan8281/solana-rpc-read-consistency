@@ -1,0 +1,664 @@
+Browser tab: 16, Title: "Transaction | MgGWaBb3y9AahCjo... | Solana", URL: "https://explorer.solana.com/tx/MgGWaBb3y9AahCjocwMfUgmANDScnx6Y4Rh5FFFkAS9E8eGTE9xz1yVLvFwcvLmJKeg9TG97QR3fXfJ7kbEeEW3?cluster=devnet".
+0 AXWebArea Transaction | MgGWaBb3y9AahCjo... | Solana, URL: explorer.solana.com/tx/MgGWaBb3y9AahCjocwMfUgmANDScnx6Y4Rh5FFFkAS9E8eGTE9xz1yVLvFwcvLmJKeg9TG97QR3fXfJ7kbEeEW3?cluster=devnet
+	1 container
+		2 link Description: Solana EXPLORER (BETA), Value: explorer.solana.com/?cluster=devnet
+		18 container
+			19 text Search
+			20 image
+			21 combo box (expanded, settable) Search, ID: radix-_r_a_, Secondary Actions: Collapse
+			22 text /
+		3 pop up button (collapsed) Description: Cluster: Devnet. Connected. Change cluster, Help: Devnet · Connected, Secondary Actions: Expand
+		4 content list
+			5 link Description: Feature Gates, Value: explorer.solana.com/feature-gates?cluster=devnet
+			6 link Description: MCP, Value: explorer.solana.com/mcp/start
+			7 link Description: Inspector, Value: explorer.solana.com/tx/inspector?cluster=devnet
+			8 link Description: Explorer repo, Value: github.com/solana-foundation/explorer
+	9 container
+		10 text DETAILS
+		11 heading Transaction, Value: 1
+			12 text Transaction
+	23 container summary
+		24 heading Summary, Value: 2
+			25 text Summary
+		26 link Description: Inspect, Value: explorer.solana.com/tx/MgGWaBb3y9AahCjocwMfUgmANDScnx6Y4Rh5FFFkAS9E8eGTE9xz1yVLvFwcvLmJKeg9TG97QR3fXfJ7kbEeEW3/inspect?cluster=devnet
+		27 button Refresh
+			28 image
+			29 text Refresh
+		30 pop up button (collapsed) Description: Download, ID: radix-_r_b_, Secondary Actions: Expand
+			31 image
+			32 text Download
+		33 container
+			34 text Status Success Confirmation Finalized (MAX Confirmations) Signature
+			35 image
+			36 text MgGWaBb3y9AahCjocwMfUgmANDScnx6Y4Rh5FFFkAS9E8eGTE9xz1yVLvFwcvLmJKeg9TG97QR3fXfJ7kbEeEW3
+			37 text Fee payer
+			38 image
+			39 link Description: 2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY, Value: explorer.solana.com/address/2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY?cluster=devnet
+			40 button Edit nickname
+				41 image
+			42 text Slot
+			43 image
+			44 link Description: 518,004,708, Value: explorer.solana.com/block/518004708?cluster=devnet
+			45 text Recent  Blockhash
+			46 text DLfXq8rPVMpUrrQ3sYg3u7Lp74rFMWxnE6m56n5oShEv Fee ◎ 0.00002 Transaction cost 5,654 CUs Consumed / Limit 1,473  /  1,209,000 Transaction Version LEGACY Transaction  size
+			47 text 810  bytes Max is  1,232  bytes Timestamp
+			48 pop up button (collapsed) Nov 2, 2026 at 22:26:15 UTC, Secondary Actions: Expand
+				49 text Nov 2, 2026 at 22:26:15 UTC
+				50 image
+	51 tab group
+		52 tab (selected, settable, boolean) Summary, Value: 1
+		53 tab (selectable, settable, boolean) Accounts, Value: 0
+		54 tab (selectable, settable, boolean) Tokens, Value: 0
+		55 tab (selectable, settable, boolean) Programs, Value: 0
+		56 tab (selectable, settable, boolean) Logs, Value: 0
+	57 container Accounts & SOL balance, ID: accounts
+		58 heading Accounts & SOL balance, Value: 2
+			59 text Accounts & SOL balance
+		60 button (expanded) Collapse
+			61 image
+			62 text Collapse
+		63 container
+			64 text 1
+			65 container
+				66 image
+				67 link Description: 2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY, Value: explorer.solana.com/address/2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY?cluster=devnet
+				68 button Edit nickname
+					69 image
+			70 text Fee Payer Signer Writable - ◎ 0.00406368 ◎ 0.02093632
+			71 button (collapsed) Description: Expand account details, Secondary Actions: Expand
+				72 image
+		73 container
+			74 text 2
+			75 container
+				76 image
+				77 link Description: 47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78, Value: explorer.solana.com/address/47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78?cluster=devnet
+				78 button Edit nickname
+					79 image
+			80 text Signer Writable + ◎ 0.0010668 ◎ 0.0010668
+			81 button (collapsed) Description: Expand account details, Secondary Actions: Expand
+				82 image
+		83 container
+			84 text 3
+			85 container
+				86 image
+				87 link Description: 8yT166QroMD8UazsqecuPWC1214k8LmgDPjoyexAcsJN, Value: explorer.solana.com/address/8yT166QroMD8UazsqecuPWC1214k8LmgDPjoyexAcsJN?cluster=devnet
+				88 button Edit nickname
+					89 image
+			90 text Signer Writable + ◎ 0.00148844 ◎ 0.00148844
+			91 button (collapsed) Description: Expand account details, Secondary Actions: Expand
+				92 image
+		93 container
+			94 text 4
+			95 container
+				96 image
+				97 link Description: 9DZKMJJ7LQkWD8XJgoRt6SK7bED92zzfXprxtthJuFg5, Value: explorer.solana.com/address/9DZKMJJ7LQkWD8XJgoRt6SK7bED92zzfXprxtthJuFg5?cluster=devnet
+				98 button Edit nickname
+					99 image
+			100 text Signer Writable + ◎ 0.00148844 ◎ 0.00148844
+			101 button (collapsed) Description: Expand account details, Secondary Actions: Expand
+				102 image
+		103 container
+			104 text 5
+			105 container
+				106 image
+				107 link Description: System Program, Value: explorer.solana.com/address/11111111111111111111111111111111?cluster=devnet
+				108 button Edit nickname
+					109 image
+			110 text Program +0 ◎ 0.000000001
+			111 button (collapsed) Description: Expand account details, Secondary Actions: Expand
+				112 image
+		113 container
+			114 text 6
+			115 container
+				116 image
+				117 link Description: Token Program, Value: explorer.solana.com/address/TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA?cluster=devnet
+				118 button Edit nickname
+					119 image
+			120 text Program +0 ◎ 20.423277856
+			121 button (collapsed) Description: Expand account details, Secondary Actions: Expand
+				122 image
+		123 text Total Account Size: 462  bytes Current data. This data may have been different at the time of the transaction.
+	124 container Tokens, ID: tokens
+		125 heading Tokens, Value: 2
+			126 text Tokens
+		127 button (expanded) Collapse
+			128 image
+			129 text Collapse
+		130 text 1
+		131 text Owner
+		132 container
+			133 image
+			134 link Description: 2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY, Value: explorer.solana.com/address/2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY?cluster=devnet
+			135 button Edit nickname
+				136 image
+		137 text Addr
+		138 container
+			139 image
+			140 link Description: 8yT166QroMD8UazsqecuPWC1214k8LmgDPjoyexAcsJN, Value: explorer.solana.com/address/8yT166QroMD8UazsqecuPWC1214k8LmgDPjoyexAcsJN?cluster=devnet
+			141 button Edit nickname
+				142 image
+		143 text Token
+		144 container
+			145 image
+			146 link Description: 47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78, Value: explorer.solana.com/address/47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78?cluster=devnet
+			147 button Edit nickname
+				148 image
+		149 text + 100 100 tokens
+		150 text 2
+		151 text Owner
+		152 container
+			153 image
+			154 link Description: 2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY, Value: explorer.solana.com/address/2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY?cluster=devnet
+			155 button Edit nickname
+				156 image
+		157 text Addr
+		158 container
+			159 image
+			160 link Description: 9DZKMJJ7LQkWD8XJgoRt6SK7bED92zzfXprxtthJuFg5, Value: explorer.solana.com/address/9DZKMJJ7LQkWD8XJgoRt6SK7bED92zzfXprxtthJuFg5?cluster=devnet
+			161 button Edit nickname
+				162 image
+		163 text Token
+		164 container
+			165 image
+			166 link Description: 47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78, Value: explorer.solana.com/address/47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78?cluster=devnet
+			167 button Edit nickname
+				168 image
+		169 text + 100 100 tokens
+	170 container Programs, ID: programs
+		171 heading Programs, Value: 2
+			172 text Programs
+		173 button (expanded) Collapse
+			174 image
+			175 text Collapse
+		176 container ix-1
+			177 text # 1 System Program: Create Account
+			178 button Raw
+				179 image
+				180 text Raw
+			181 table
+				182 row
+					183 cell
+						184 text Program
+					185 cell
+						186 container
+							187 image
+							188 link Description: System Program, Value: explorer.solana.com/address/11111111111111111111111111111111?cluster=devnet
+							189 button Edit nickname
+								190 image
+				191 row
+					192 cell
+						193 text From Address
+					194 cell
+						195 container
+							196 image
+							197 link Description: 2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY, Value: explorer.solana.com/address/2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY?cluster=devnet
+							198 button Edit nickname
+								199 image
+				200 row
+					201 cell
+						202 text New Address
+					203 cell
+						204 container
+							205 image
+							206 link Description: 47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78, Value: explorer.solana.com/address/47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78?cluster=devnet
+							207 button Edit nickname
+								208 image
+				209 row
+					210 cell
+						211 text Transfer Amount (SOL)
+					212 cell
+						213 text ◎ 0.0010668
+				214 row
+					215 cell
+						216 text Allocated Data Size
+					217 cell
+						218 text 82 byte(s)
+				219 row
+					220 cell
+						221 text Assigned Program Id
+					222 cell
+						223 container
+							224 image
+							225 link Description: Token Program, Value: explorer.solana.com/address/TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA?cluster=devnet
+							226 button Edit nickname
+								227 image
+		228 container ix-2
+			229 text # 2 Token Program: Initialize Mint (2)
+			230 button Raw
+				231 image
+				232 text Raw
+			233 table
+				234 row
+					235 cell
+						236 text Program
+					237 cell
+						238 container
+							239 image
+							240 link Description: Token Program, Value: explorer.solana.com/address/TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA?cluster=devnet
+							241 button Edit nickname
+								242 image
+				243 row
+					244 cell
+						245 text Decimals
+					246 cell
+						247 text 0
+				248 row
+					249 cell
+						250 text Mint
+					251 cell
+						252 container
+							253 image
+							254 link Description: 47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78, Value: explorer.solana.com/address/47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78?cluster=devnet
+							255 button Edit nickname
+								256 image
+				257 row
+					258 cell
+						259 text MintAuthority
+					260 cell
+						261 container
+							262 image
+							263 link Description: 2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY, Value: explorer.solana.com/address/2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY?cluster=devnet
+							264 button Edit nickname
+								265 image
+		266 container ix-3
+			267 text # 3 System Program: Create Account
+			268 button Raw
+				269 image
+				270 text Raw
+			271 table
+				272 row
+					273 cell
+						274 text Program
+					275 cell
+						276 container
+							277 image
+							278 link Description: System Program, Value: explorer.solana.com/address/11111111111111111111111111111111?cluster=devnet
+							279 button Edit nickname
+								280 image
+				281 row
+					282 cell
+						283 text From Address
+					284 cell
+						285 container
+							286 image
+							287 link Description: 2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY, Value: explorer.solana.com/address/2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY?cluster=devnet
+							288 button Edit nickname
+								289 image
+				290 row
+					291 cell
+						292 text New Address
+					293 cell
+						294 container
+							295 image
+							296 link Description: 8yT166QroMD8UazsqecuPWC1214k8LmgDPjoyexAcsJN, Value: explorer.solana.com/address/8yT166QroMD8UazsqecuPWC1214k8LmgDPjoyexAcsJN?cluster=devnet
+							297 button Edit nickname
+								298 image
+				299 row
+					300 cell
+						301 text Transfer Amount (SOL)
+					302 cell
+						303 text ◎ 0.00148844
+				304 row
+					305 cell
+						306 text Allocated Data Size
+					307 cell
+						308 text 165 byte(s)
+				309 row
+					310 cell
+						311 text Assigned Program Id
+					312 cell
+						313 container
+							314 image
+							315 link Description: Token Program, Value: explorer.solana.com/address/TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA?cluster=devnet
+							316 button Edit nickname
+								317 image
+		318 container ix-4
+			319 text # 4 Token Program: Initialize Account (3)
+			320 button Raw
+				321 image
+				322 text Raw
+			323 table
+				324 row
+					325 cell
+						326 text Program
+					327 cell
+						328 container
+							329 image
+							330 link Description: Token Program, Value: explorer.solana.com/address/TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA?cluster=devnet
+							331 button Edit nickname
+								332 image
+				333 row
+					334 cell
+						335 text Account
+					336 cell
+						337 container
+							338 image
+							339 link Description: 8yT166QroMD8UazsqecuPWC1214k8LmgDPjoyexAcsJN, Value: explorer.solana.com/address/8yT166QroMD8UazsqecuPWC1214k8LmgDPjoyexAcsJN?cluster=devnet
+							340 button Edit nickname
+								341 image
+				342 row
+					343 cell
+						344 text Mint
+					345 cell
+						346 container
+							347 image
+							348 link Description: 47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78, Value: explorer.solana.com/address/47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78?cluster=devnet
+							349 button Edit nickname
+								350 image
+				351 row
+					352 cell
+						353 text Owner
+					354 cell
+						355 container
+							356 image
+							357 link Description: 2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY, Value: explorer.solana.com/address/2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY?cluster=devnet
+							358 button Edit nickname
+								359 image
+		360 container ix-5
+			361 text # 5 System Program: Create Account
+			362 button Raw
+				363 image
+				364 text Raw
+			365 table
+				366 row
+					367 cell
+						368 text Program
+					369 cell
+						370 container
+							371 image
+							372 link Description: System Program, Value: explorer.solana.com/address/11111111111111111111111111111111?cluster=devnet
+							373 button Edit nickname
+								374 image
+				375 row
+					376 cell
+						377 text From Address
+					378 cell
+						379 container
+							380 image
+							381 link Description: 2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY, Value: explorer.solana.com/address/2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY?cluster=devnet
+							382 button Edit nickname
+								383 image
+				384 row
+					385 cell
+						386 text New Address
+					387 cell
+						388 container
+							389 image
+							390 link Description: 9DZKMJJ7LQkWD8XJgoRt6SK7bED92zzfXprxtthJuFg5, Value: explorer.solana.com/address/9DZKMJJ7LQkWD8XJgoRt6SK7bED92zzfXprxtthJuFg5?cluster=devnet
+							391 button Edit nickname
+								392 image
+				393 row
+					394 cell
+						395 text Transfer Amount (SOL)
+					396 cell
+						397 text ◎ 0.00148844
+				398 row
+					399 cell
+						400 text Allocated Data Size
+					401 cell
+						402 text 165 byte(s)
+				403 row
+					404 cell
+						405 text Assigned Program Id
+					406 cell
+						407 container
+							408 image
+							409 link Description: Token Program, Value: explorer.solana.com/address/TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA?cluster=devnet
+							410 button Edit nickname
+								411 image
+		412 container ix-6
+			413 text # 6 Token Program: Initialize Account (3)
+			414 button Raw
+				415 image
+				416 text Raw
+			417 table
+				418 row
+					419 cell
+						420 text Program
+					421 cell
+						422 container
+							423 image
+							424 link Description: Token Program, Value: explorer.solana.com/address/TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA?cluster=devnet
+							425 button Edit nickname
+								426 image
+				427 row
+					428 cell
+						429 text Account
+					430 cell
+						431 container
+							432 image
+							433 link Description: 9DZKMJJ7LQkWD8XJgoRt6SK7bED92zzfXprxtthJuFg5, Value: explorer.solana.com/address/9DZKMJJ7LQkWD8XJgoRt6SK7bED92zzfXprxtthJuFg5?cluster=devnet
+							434 button Edit nickname
+								435 image
+				436 row
+					437 cell
+						438 text Mint
+					439 cell
+						440 container
+							441 image
+							442 link Description: 47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78, Value: explorer.solana.com/address/47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78?cluster=devnet
+							443 button Edit nickname
+								444 image
+				445 row
+					446 cell
+						447 text Owner
+					448 cell
+						449 container
+							450 image
+							451 link Description: 2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY, Value: explorer.solana.com/address/2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY?cluster=devnet
+							452 button Edit nickname
+								453 image
+		454 container ix-7
+			455 text # 7 Token Program: Mint To
+			456 button Raw
+				457 image
+				458 text Raw
+			459 table
+				460 row
+					461 cell
+						462 text Program
+					463 cell
+						464 container
+							465 image
+							466 link Description: Token Program, Value: explorer.solana.com/address/TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA?cluster=devnet
+							467 button Edit nickname
+								468 image
+				469 row
+					470 cell
+						471 text Token
+					472 cell
+						473 container
+							474 image
+							475 link Description: 47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78, Value: explorer.solana.com/address/47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78?cluster=devnet
+							476 button Edit nickname
+								477 image
+				478 row
+					479 cell
+						480 text Account
+					481 cell
+						482 container
+							483 image
+							484 link Description: 8yT166QroMD8UazsqecuPWC1214k8LmgDPjoyexAcsJN, Value: explorer.solana.com/address/8yT166QroMD8UazsqecuPWC1214k8LmgDPjoyexAcsJN?cluster=devnet
+							485 button Edit nickname
+								486 image
+				487 row
+					488 cell
+						489 text Amount
+					490 cell
+						491 text 100
+				492 row
+					493 cell
+						494 text Mint
+					495 cell
+						496 container
+							497 image
+							498 link Description: 47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78, Value: explorer.solana.com/address/47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78?cluster=devnet
+							499 button Edit nickname
+								500 image
+				501 row
+					502 cell
+						503 text MintAuthority
+					504 cell
+						505 container
+							506 image
+							507 link Description: 2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY, Value: explorer.solana.com/address/2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY?cluster=devnet
+							508 button Edit nickname
+								509 image
+		510 container ix-8
+			511 text # 8 Token Program: Mint To
+			512 button Raw
+				513 image
+				514 text Raw
+			515 table
+				516 row
+					517 cell
+						518 text Program
+					519 cell
+						520 container
+							521 image
+							522 link Description: Token Program, Value: explorer.solana.com/address/TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA?cluster=devnet
+							523 button Edit nickname
+								524 image
+				525 row
+					526 cell
+						527 text Token
+					528 cell
+						529 container
+							530 image
+							531 link Description: 47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78, Value: …
+							532 button Edit nickname
+								533 image
+				534 row
+					535 cell
+						536 text Account
+					537 cell
+						538 container
+							539 image
+							540 link Description: 9DZKMJJ7LQkWD8XJgoRt6SK7bED92zzfXprxtthJuFg5, Value: …
+							541 button Edit nickname
+								542 image
+				543 row
+					544 cell
+						545 text Amount
+					546 cell
+						547 text 100
+				548 row
+					549 cell
+						550 text Mint
+					551 cell
+						552 container
+							553 image
+							554 link Description: 47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78, Value: …
+							555 button Edit nickname
+								556 image
+				557 row
+					558 cell
+						559 text MintAuthority
+					560 cell
+						561 container
+							562 image
+							563 link Description: 2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY, Value: …
+							564 button Edit nickname
+								565 image
+		566 container ix-9
+			567 text # 9 Token Program: Set Authority
+			568 button Raw
+				569 image
+				570 text Raw
+			571 table
+				572 row
+					573 cell
+						574 text Program
+					575 cell
+						576 container
+							577 image
+							578 link Description: Token Program, Value: …
+							579 button Edit nickname
+								580 image
+				581 row
+					582 cell
+						583 text Authority
+					584 cell
+						585 container
+							586 image
+							587 link Description: 2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY, Value: …
+							588 button Edit nickname
+								589 image
+				590 row
+					591 cell
+						592 text AuthorityType
+					593 cell
+						594 text mintTokens
+				595 row
+					596 cell
+						597 text Mint
+					598 cell
+						599 container
+							600 image
+							601 link Description: 47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78, Value: …
+							602 button Edit nickname
+								603 image
+				604 row
+					605 cell
+						606 text NewAuthority
+					607 cell
+						608 text (none)
+	609 container logs
+		610 container Logs
+			611 heading Logs, Value: 2
+				612 text Logs
+			613 button Parsed
+			614 button RAW
+			615 button (expanded) Collapse
+				616 image
+				617 text Collapse
+			618 table
+				619 row
+					620 cell
+						621 link Description: #1 System Instruction, Value: …
+						622 text >  Program returned success
+				623 row
+					624 cell
+						625 link Description: #2 Token Instruction, Value: …
+						626 text >  Program consumed: 202 of 1208850 compute units >  Program returned success
+				627 row
+					628 cell
+						629 link Description: #3 System Instruction, Value: …
+						630 text >  Program returned success
+				631 row
+					632 cell
+						633 link Description: #4 Token Instruction, Value: …
+						634 text >  Program consumed: 233 of 1208498 compute units >  Program returned success
+				635 row
+					636 cell
+						637 link Description: #5 System Instruction, Value: …
+						638 text >  Program returned success
+				639 row
+					640 cell
+						641 link Description: #6 Token Instruction, Value: …
+						642 text >  Program consumed: 233 of 1208115 compute units >  Program returned success
+				643 row
+					644 cell
+						645 link Description: #7 Token Instruction, Value: …
+						646 text >  Program consumed: 120 of 1207882 compute units >  Program returned success
+				647 row
+					648 cell
+						649 link Description: #8 Token Instruction, Value: …
+						650 text >  Program consumed: 120 of 1207762 compute units >  Program returned success
+				651 row
+					652 cell
+						653 link Description: #9 Token Instruction, Value: …
+						654 text >  Program consumed: 115 of 1207642 compute units >  Program returned success
+		655 container
+			656 text CU profiling
+			657 button (expanded) Collapse
+				658 image
+			659 text Total:  1,473  CU
+			660 image
+			661 text #1 Create Account :  150 #2 Initialize Mint2 :  202 #3 Create Account :  150 #4 Initialize Account3 :  233 #5 Create Account :  150 #6 Initialize Account3 :  233 #7 Mint To :  120 #8 Mint To :  120 #9 Set Authority :  115
+	14 container
+		15 text SOLANA EXPLORER  (BETA)
+		16 link Description: Terms of Services, Value: …
+	17 container Notifications alt+T
+
+The focused UI element is 21 combo box (expanded, settable) Search, ID: radix-_r_a_, Secondary Actions: Collapse

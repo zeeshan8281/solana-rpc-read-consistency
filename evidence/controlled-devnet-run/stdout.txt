@@ -1,0 +1,17 @@
+Helius devnet | finalized | 2026-11-02T22:26:11.647Z
+Test wallet: 2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY
+Submitted devnet transaction: MgGWaBb3y9AahCjocwMfUgmANDScnx6Y4Rh5FFFkAS9E8eGTE9xz1yVLvFwcvLmJKeg9TG97QR3fXfJ7kbEeEW3
+Submitted devnet transaction: 3nr1sD9rqoRSiWUTg4Du5KfQtDGf3BPymGfJMJ2kMduV79cu96yJpEeeWJqqhohPx2Z7uffmss9tQ9Bgd3xmCR2H
+Mint: 47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78
+Account A: 8yT166QroMD8UazsqecuPWC1214k8LmgDPjoyexAcsJN
+Account B: 9DZKMJJ7LQkWD8XJgoRt6SK7bED92zzfXprxtthJuFg5
+Before: A=100 B=100 total=200 | slot 518004712
+Read A before transfer: 100 | slot 518004713
+Transfer: 10 tokens A -> B | finalized slot 518004720
+Read B after transfer: 110 | slot 518004724
+MIXED TOTAL: 100 + 110 = 210
+GROUPED TOTAL: 90 + 110 = 200 | slot 518004725
+Transaction metadata: [100,100] -> [90,110]; err=null
+Mint authority revoked; supply=200. All assertions passed.
+Explorer: https://explorer.solana.com/tx/3nr1sD9rqoRSiWUTg4Du5KfQtDGf3BPymGfJMJ2kMduV79cu96yJpEeeWJqqhohPx2Z7uffmss9tQ9Bgd3xmCR2H?cluster=devnet
+Decoded requests and responses: runs/2026-11-02T22-26-11.647Z/controlled-run.json

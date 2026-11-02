@@ -6,7 +6,7 @@ A treasury dashboard tracks a token across two accounts. Each holds 100 tokens. 
 
 Now refresh the dashboard. Its first RPC call reads A before the transfer: 100. Its second call reads B after the transfer: 110. Both requests succeed. The dashboard displays 210.
 
-The experiment below reproduces this with a signed transfer on a local Agave validator. One wallet controls both accounts, holding the same classic SPL token with zero decimals. There are no other token movements; SOL pays the transaction fee. The RPC responses and transaction receipt are saved alongside the code. How did two valid reads produce a total that neither complete state contains?
+The experiment below reproduces this with a signed transfer through Helius on Solana devnet. One wallet controls both accounts, holding the same classic SPL token with zero decimals. There are no other token movements; devnet SOL pays the fee. The RPC responses and public transaction receipt are saved alongside the code. How did two valid reads produce a total that neither complete state contains?
 
 ## Each request chooses a view
 
@@ -14,7 +14,7 @@ Solana [transactions execute atomically](https://solana.com/docs/core/transactio
 
 ![Two complete views and the mixed total](figures/01-mixed-account-views.png)
 
-Figure 1. Measured local-validator states: A was read at slot 59; B at slot 92. The transfer executed in slot 91 and was finalized before the second read.
+Figure 1. The complete pairs were read at slots 518004712 and 518004725. The highlighted A and B values came from separate reads at 518004713 and 518004724, around the transfer in slot 518004720.
 
 Inside Agave, a Bank represents account state for a slot. An account read uses a selected Bank to resolve the account. That choice happens for each request: the [getAccountInfo handler](https://github.com/anza-xyz/agave/blob/a1468974d804b413285d87030f20bd40ae22ffaa/rpc/src/rpc.rs#L541-L568) obtains a Bank, looks up the account and constructs the response.
 
@@ -81,22 +81,23 @@ Use this parameter when an operation requires a context at least as recent as an
 
 ## Reproduce the wrong total
 
-The reproduction creates a fresh mint and two ordinary token accounts, puts 100 tokens in each, and revokes mint authority. It reads A, sends 10 tokens from A to B, waits for finalization, then reads B. Finally, it reads the pair together and checks the transfer receipt. These are executed transactions on a running local validator, not mocked responses or transaction simulations.
+The reproduction creates a fresh mint and two ordinary token accounts, puts 100 tokens in each, and revokes mint authority. It reads A, sends 10 tokens from A to B, waits for finalization, then reads B. Finally, it reads the pair together and checks the transfer receipt. Both setup and transfer execute on devnet.
 
-Follow the [repository setup](https://github.com/zeeshan8281/solana-rpc-read-consistency#run) to start Agave’s local validator. With Node.js 22 or later, run these commands from the repository:
+Follow the [repository setup](https://github.com/zeeshan8281/solana-rpc-read-consistency#run). You need Node.js 22 or later, a Helius API key and at least 0.01 test-only devnet SOL in the script’s wallet. From the repository:
 
 ```sh
 npm ci --ignore-scripts
-npm run reproduce -- --local
+export HELIUS_API_KEY='YOUR_API_KEY'
+npm run reproduce
 ```
 
-The captured run began on 2 November 2026 at 21:56 UTC, using Agave 4.4.0 and Node.js 24.22.1. A returned 100 at slot 59. The transfer executed in slot 91; after finalization, B returned 110 at slot 92. The mixed total was 210. The grouped read at slot 92 returned 90 and 110: total 200. The process exited 0.
+The captured run began on 2 November 2026 at 22:26 UTC through Helius devnet, using Node.js 24.22.1. A returned 100 at slot 518004713. The transfer executed in slot 518004720; after finalization, B returned 110 at 518004724. The mixed total was 210. The grouped read at 518004725 returned 90 and 110: total 200. The process exited 0.
 
-![Actual stdout from the controlled local transfer](figures/04-controlled-local-run.jpg)
+![Actual stdout from the controlled Helius devnet transfer](figures/05-controlled-devnet-run.jpg)
 
 Screenshot. Verbatim stdout excerpt displayed in a browser log viewer. Full stdout, stderr and decoded RPC responses are saved in the repository.
 
-The [saved receipt](https://github.com/zeeshan8281/solana-rpc-read-consistency/blob/main/evidence/controlled-local-run/controlled-run.json) reports `err: null`, with token balances changing from `[100,100]` to `[90,110]`. The script matches those entries to addresses using `accountIndex`. This ordering is deliberate: it demonstrates the failure mode, not its frequency in production. The local run did not use Helius. Separate Helius mainnet reads in the repository checked response contexts and error `-32016`; those returned equal totals.
+Verify the [setup transaction](https://explorer.solana.com/tx/MgGWaBb3y9AahCjocwMfUgmANDScnx6Y4Rh5FFFkAS9E8eGTE9xz1yVLvFwcvLmJKeg9TG97QR3fXfJ7kbEeEW3?cluster=devnet) and [10-token transfer](https://explorer.solana.com/tx/3nr1sD9rqoRSiWUTg4Du5KfQtDGf3BPymGfJMJ2kMduV79cu96yJpEeeWJqqhohPx2Z7uffmss9tQ9Bgd3xmCR2H?cluster=devnet) on Solana Explorer, with Devnet selected. The receipt reports `err: null` and balances changing from `[100,100]` to `[90,110]`; the script maps entries to addresses using `accountIndex`. Independent public-RPC queries confirmed both receipts. The explorer verifies the transfer; the [captured responses](https://github.com/zeeshan8281/solana-rpc-read-consistency/blob/main/evidence/controlled-devnet-run/controlled-run.json) establish the read order and mixed total. That ordering is deliberate, so this demonstrates the failure mode rather than its production frequency.
 
 ## Where the grouped read stops helping
 

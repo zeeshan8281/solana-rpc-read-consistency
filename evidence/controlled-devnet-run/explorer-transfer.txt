@@ -1,0 +1,3 @@
+Browser tab: 15, Title: "Transaction | 3nr1sD9rqoRSiWUT... | Solana", URL: "https://explorer.solana.com/tx/3nr1sD9rqoRSiWUTg4Du5KfQtDGf3BPymGfJMJ2kMduV79cu96yJpEeeWJqqhohPx2Z7uffmss9tQ9Bgd3xmCR2H?cluster=devnet".
+There has been no change in the accessibility tree.
+The focused UI element is 21 combo box (expanded, settable) Search, ID: radix-_r_6_, Secondary Actions: Collapse

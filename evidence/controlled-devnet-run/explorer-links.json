@@ -1,0 +1,5 @@
+{
+  "setup": "https://explorer.solana.com/tx/MgGWaBb3y9AahCjocwMfUgmANDScnx6Y4Rh5FFFkAS9E8eGTE9xz1yVLvFwcvLmJKeg9TG97QR3fXfJ7kbEeEW3?cluster=devnet",
+  "transfer": "https://explorer.solana.com/tx/3nr1sD9rqoRSiWUTg4Du5KfQtDGf3BPymGfJMJ2kMduV79cu96yJpEeeWJqqhohPx2Z7uffmss9tQ9Bgd3xmCR2H?cluster=devnet",
+  "funding": "https://explorer.solana.com/tx/3YiyZf5aSnq3X9H3MkhedDaK3acfLsabUSv7x1YJNoaLs6fsfc4nXCDa37fUMHYFRaMtZzRnjAALdSsqVd6kMXq3?cluster=devnet"
+}

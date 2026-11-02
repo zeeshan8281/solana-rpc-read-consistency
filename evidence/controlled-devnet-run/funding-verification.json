@@ -1,0 +1,97 @@
+{
+  "checkedAt": "2026-11-02T22:30:28.287472+00:00",
+  "provider": "Solana public devnet RPC",
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "getTransaction",
+    "params": [
+      "3YiyZf5aSnq3X9H3MkhedDaK3acfLsabUSv7x1YJNoaLs6fsfc4nXCDa37fUMHYFRaMtZzRnjAALdSsqVd6kMXq3",
+      {
+        "commitment": "finalized",
+        "encoding": "jsonParsed",
+        "maxSupportedTransactionVersion": 0
+      }
+    ]
+  },
+  "response": {
+    "jsonrpc": "2.0",
+    "result": {
+      "blockTime": 1793658337,
+      "meta": {
+        "computeUnitsConsumed": 150,
+        "costUnits": 1481,
+        "err": null,
+        "fee": 5000,
+        "innerInstructions": [],
+        "logMessages": [
+          "Program 11111111111111111111111111111111 invoke [1]",
+          "Program 11111111111111111111111111111111 success"
+        ],
+        "postBalances": [
+          159476985132,
+          25000000,
+          1
+        ],
+        "postTokenBalances": [],
+        "preBalances": [
+          159501990132,
+          0,
+          1
+        ],
+        "preTokenBalances": [],
+        "rewards": [],
+        "status": {
+          "Ok": null
+        }
+      },
+      "slot": 518004548,
+      "transaction": {
+        "message": {
+          "accountKeys": [
+            {
+              "pubkey": "7VGW5f4FkQAnujeZGHVk7MmbPSobwLLzHDu1Kdo2MgqX",
+              "signer": true,
+              "source": "transaction",
+              "writable": true
+            },
+            {
+              "pubkey": "2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY",
+              "signer": false,
+              "source": "transaction",
+              "writable": true
+            },
+            {
+              "pubkey": "11111111111111111111111111111111",
+              "signer": false,
+              "source": "transaction",
+              "writable": false
+            }
+          ],
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "destination": "2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY",
+                  "lamports": 25000000,
+                  "source": "7VGW5f4FkQAnujeZGHVk7MmbPSobwLLzHDu1Kdo2MgqX"
+                },
+                "type": "transfer"
+              },
+              "program": "system",
+              "programId": "11111111111111111111111111111111",
+              "stackHeight": 1
+            }
+          ],
+          "recentBlockhash": "CfX7kfNPSHXsDcdwdfFhuvj62EgW5JsF5Qn9gQ1217v8"
+        },
+        "signatures": [
+          "3YiyZf5aSnq3X9H3MkhedDaK3acfLsabUSv7x1YJNoaLs6fsfc4nXCDa37fUMHYFRaMtZzRnjAALdSsqVd6kMXq3"
+        ]
+      },
+      "transactionIndex": 4,
+      "version": "legacy"
+    },
+    "id": 1
+  }
+}

@@ -1,0 +1,867 @@
+{
+  "started": "2026-11-02T22:26:11.647Z",
+  "completed": "2026-11-02T22:26:21.255Z",
+  "node": "v24.22.1",
+  "network": "devnet",
+  "genesisHash": "EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG",
+  "validatorVersion": {
+    "feature-set": 1855282951,
+    "solana-core": "4.4.0-beta.0"
+  },
+  "commitment": "finalized",
+  "owner": "2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY",
+  "mint": "47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78",
+  "addresses": [
+    "8yT166QroMD8UazsqecuPWC1214k8LmgDPjoyexAcsJN",
+    "9DZKMJJ7LQkWD8XJgoRt6SK7bED92zzfXprxtthJuFg5"
+  ],
+  "decimals": 0,
+  "setup": {
+    "signature": "MgGWaBb3y9AahCjocwMfUgmANDScnx6Y4Rh5FFFkAS9E8eGTE9xz1yVLvFwcvLmJKeg9TG97QR3fXfJ7kbEeEW3",
+    "slot": 518004708
+  },
+  "transfer": {
+    "signature": "3nr1sD9rqoRSiWUTg4Du5KfQtDGf3BPymGfJMJ2kMduV79cu96yJpEeeWJqqhohPx2Z7uffmss9tQ9Bgd3xmCR2H",
+    "slot": 518004720
+  },
+  "beforeSlot": 518004712,
+  "firstReadSlot": 518004713,
+  "secondReadSlot": 518004724,
+  "groupedSlot": 518004725,
+  "before": [
+    "100",
+    "100"
+  ],
+  "firstA": "100",
+  "secondB": "110",
+  "mixedTotal": "210",
+  "after": [
+    "90",
+    "110"
+  ],
+  "groupedTotal": "200",
+  "receiptPre": [
+    "100",
+    "100"
+  ],
+  "receiptPost": [
+    "90",
+    "110"
+  ],
+  "mintSupply": "200",
+  "sourceSha256": "b80f9658316687bb021ef41628ecff3452307da257ac35fc6f155533a919473e",
+  "records": [
+    {
+      "at": "2026-11-02T22:26:11.886Z",
+      "provider": "Helius devnet",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "getGenesisHash",
+        "params": []
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": "EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG",
+        "id": 1
+      }
+    },
+    {
+      "at": "2026-11-02T22:26:12.986Z",
+      "provider": "Helius devnet",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "method": "getVersion",
+        "params": []
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "feature-set": 1855282951,
+          "solana-core": "4.4.0-beta.0"
+        },
+        "id": 2
+      }
+    },
+    {
+      "at": "2026-11-02T22:26:13.962Z",
+      "provider": "Helius devnet",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "method": "getBalance",
+        "params": [
+          "2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY",
+          {
+            "commitment": "finalized"
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "slot": 518004699,
+            "apiVersion": "4.3.0-alpha.2"
+          },
+          "value": 25000000
+        },
+        "id": 3
+      }
+    },
+    {
+      "at": "2026-11-02T22:26:14.259Z",
+      "provider": "Helius devnet",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "method": "getMinimumBalanceForRentExemption",
+        "params": [
+          82
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": 1066800,
+        "id": 4
+      }
+    },
+    {
+      "at": "2026-11-02T22:26:14.567Z",
+      "provider": "Helius devnet",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "method": "getMinimumBalanceForRentExemption",
+        "params": [
+          165
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": 1488440,
+        "id": 5
+      }
+    },
+    {
+      "at": "2026-11-02T22:26:14.914Z",
+      "provider": "Helius devnet",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 6,
+        "method": "getLatestBlockhash",
+        "params": [
+          {
+            "commitment": "finalized"
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "id": 6,
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "slot": 518004701
+          },
+          "value": {
+            "blockhash": "DLfXq8rPVMpUrrQ3sYg3u7Lp74rFMWxnE6m56n5oShEv",
+            "lastValidBlockHeight": 505170206
+          }
+        }
+      }
+    },
+    {
+      "at": "2026-11-02T22:26:15.295Z",
+      "provider": "Helius devnet",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 7,
+        "method": "sendTransaction",
+        "params": [
+          "BBHUwbfvPLsnMxGbY8clzyTp7yveZOVtGQ7lU90EEORjWwyeOJkcatW+jkdX9Syn3xwTnYDuR8lQ568+LmcDAwAsebDAfop8wkzn0D6myIMZfvQl2rhy1Yb48JyHi8QstIByLbuPluU4NVfpmVKPeYhepkw71HVdr+c/a6mg6hsH5jIbLjkgmvA2ddEvyzXztqZ3f3Zh5OO3P36KXZhoizMI7wtVhiwlCOiN/FKdabzO0wLEJekFjX6+gePdlwaWDQlpyvvOsb/nGzCUl6cjGjBQk+ZKQoKmCHIJmlx0IZtVXmI6uWBKrPI8UsnfSdWAChiGbGAbNz5L6ZyOpfhTPgEEAAIGFKA9S1EAZPVTTdvWM9I93FLRlPiDgIQ7rfJOikRiglsuSzcszW6JVnAcsOQLePjOP3h46GPRdCOsfLvIe1mtr3Z3u9o1WQLjc3q1pZZBY3jdy6fNwZvLo3eTlxQ35VCfehUBX6VURseJpDaQkk7ztY32nZHZJUVlD+urpXFAg0IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCpt1XYo/Cx6E80DMgpz3RIEM41yoDo2b6BBeQVch/Fo88JBAIAATQAAAAAMEcQAAAAAABSAAAAAAAAAAbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCpBQEBIxQAFKA9S1EAZPVTTdvWM9I93FLRlPiDgIQ7rfJOikRiglsABAIAAjQAAAAAOLYWAAAAAAClAAAAAAAAAAbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCpBQICASESFKA9S1EAZPVTTdvWM9I93FLRlPiDgIQ7rfJOikRiglsEAgADNAAAAAA4thYAAAAAAKUAAAAAAAAABt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKkFAgMBIRIUoD1LUQBk9VNN29Yz0j3cUtGU+IOAhDut8k6KRGKCWwUDAQIACQdkAAAAAAAAAAUDAQMACQdkAAAAAAAAAAUCAQADBgAA",
+          {
+            "encoding": "base64",
+            "preflightCommitment": "finalized",
+            "skipPreflight": false,
+            "maxRetries": 3
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": "MgGWaBb3y9AahCjocwMfUgmANDScnx6Y4Rh5FFFkAS9E8eGTE9xz1yVLvFwcvLmJKeg9TG97QR3fXfJ7kbEeEW3",
+        "id": 7
+      }
+    },
+    {
+      "at": "2026-11-02T22:26:15.796Z",
+      "provider": "Helius devnet",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 8,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "MgGWaBb3y9AahCjocwMfUgmANDScnx6Y4Rh5FFFkAS9E8eGTE9xz1yVLvFwcvLmJKeg9TG97QR3fXfJ7kbEeEW3"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 8,
+        "result": {
+          "context": {
+            "slot": 518004707
+          },
+          "value": [
+            null
+          ]
+        }
+      }
+    },
+    {
+      "at": "2026-11-02T22:26:17.080Z",
+      "provider": "Helius devnet",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 9,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "MgGWaBb3y9AahCjocwMfUgmANDScnx6Y4Rh5FFFkAS9E8eGTE9xz1yVLvFwcvLmJKeg9TG97QR3fXfJ7kbEeEW3"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 9,
+        "result": {
+          "context": {
+            "slot": 518004711
+          },
+          "value": [
+            {
+              "slot": 518004708,
+              "confirmations": null,
+              "status": {
+                "Ok": null
+              },
+              "err": null,
+              "confirmationStatus": "finalized"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "at": "2026-11-02T22:26:17.369Z",
+      "provider": "Helius devnet",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 10,
+        "method": "getMultipleAccounts",
+        "params": [
+          [
+            "8yT166QroMD8UazsqecuPWC1214k8LmgDPjoyexAcsJN",
+            "9DZKMJJ7LQkWD8XJgoRt6SK7bED92zzfXprxtthJuFg5"
+          ],
+          {
+            "commitment": "finalized",
+            "encoding": "jsonParsed",
+            "minContextSlot": 518004708
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "slot": 518004712,
+            "apiVersion": "4.3.0-alpha.2"
+          },
+          "value": [
+            {
+              "lamports": 1488440,
+              "data": {
+                "program": "spl-token",
+                "parsed": {
+                  "info": {
+                    "isNative": false,
+                    "mint": "47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78",
+                    "owner": "2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY",
+                    "state": "initialized",
+                    "tokenAmount": {
+                      "amount": "100",
+                      "decimals": 0,
+                      "uiAmount": 100,
+                      "uiAmountString": "100"
+                    }
+                  },
+                  "type": "account"
+                },
+                "space": 165
+              },
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "executable": false,
+              "rentEpoch": 18446744073709552000,
+              "space": 165
+            },
+            {
+              "lamports": 1488440,
+              "data": {
+                "program": "spl-token",
+                "parsed": {
+                  "info": {
+                    "isNative": false,
+                    "mint": "47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78",
+                    "owner": "2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY",
+                    "state": "initialized",
+                    "tokenAmount": {
+                      "amount": "100",
+                      "decimals": 0,
+                      "uiAmount": 100,
+                      "uiAmountString": "100"
+                    }
+                  },
+                  "type": "account"
+                },
+                "space": 165
+              },
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "executable": false,
+              "rentEpoch": 18446744073709552000,
+              "space": 165
+            }
+          ]
+        },
+        "id": 10
+      }
+    },
+    {
+      "at": "2026-11-02T22:26:17.678Z",
+      "provider": "Helius devnet",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 11,
+        "method": "getAccountInfo",
+        "params": [
+          "8yT166QroMD8UazsqecuPWC1214k8LmgDPjoyexAcsJN",
+          {
+            "commitment": "finalized",
+            "encoding": "jsonParsed",
+            "minContextSlot": 518004712
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "slot": 518004713,
+            "apiVersion": "4.3.0-alpha.2"
+          },
+          "value": {
+            "lamports": 1488440,
+            "data": {
+              "program": "spl-token",
+              "parsed": {
+                "info": {
+                  "isNative": false,
+                  "mint": "47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78",
+                  "owner": "2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY",
+                  "state": "initialized",
+                  "tokenAmount": {
+                    "amount": "100",
+                    "decimals": 0,
+                    "uiAmount": 100,
+                    "uiAmountString": "100"
+                  }
+                },
+                "type": "account"
+              },
+              "space": 165
+            },
+            "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "executable": false,
+            "rentEpoch": 18446744073709552000,
+            "space": 165
+          }
+        },
+        "id": 11
+      }
+    },
+    {
+      "at": "2026-11-02T22:26:17.992Z",
+      "provider": "Helius devnet",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 12,
+        "method": "getLatestBlockhash",
+        "params": [
+          {
+            "commitment": "finalized"
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "id": 12,
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "slot": 518004715
+          },
+          "value": {
+            "blockhash": "4QztS8CwGeq3foNaJKGbqQJQvnHFCauaJdmfXZAfvqVn",
+            "lastValidBlockHeight": 505170220
+          }
+        }
+      }
+    },
+    {
+      "at": "2026-11-02T22:26:18.236Z",
+      "provider": "Helius devnet",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 13,
+        "method": "sendTransaction",
+        "params": [
+          "AYuRrcU5pmL3s1U+RUInwSkPSoOQ1DXFWI2/GaSxmXe8JYBOWgV8skb5GtUTeUFFRS08fMCiBn5EIik/U2DgOQIBAAIFFKA9S1EAZPVTTdvWM9I93FLRlPiDgIQ7rfJOikRiglt2d7vaNVkC43N6taWWQWN43cunzcGby6N3k5cUN+VQn3oVAV+lVEbHiaQ2kJJO87WN9p2R2SVFZQ/rq6VxQINCLks3LM1uiVZwHLDkC3j4zj94eOhj0XQjrHy7yHtZra8G3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqTK430cD7jPsiIKemD1qVqZ5byNK6A1Do00S+jMrdoONAQQEAQMCAAoMCgAAAAAAAAAA",
+          {
+            "encoding": "base64",
+            "preflightCommitment": "finalized",
+            "skipPreflight": false,
+            "maxRetries": 3
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": "3nr1sD9rqoRSiWUTg4Du5KfQtDGf3BPymGfJMJ2kMduV79cu96yJpEeeWJqqhohPx2Z7uffmss9tQ9Bgd3xmCR2H",
+        "id": 13
+      }
+    },
+    {
+      "at": "2026-11-02T22:26:18.523Z",
+      "provider": "Helius devnet",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 14,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "3nr1sD9rqoRSiWUTg4Du5KfQtDGf3BPymGfJMJ2kMduV79cu96yJpEeeWJqqhohPx2Z7uffmss9tQ9Bgd3xmCR2H"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 14,
+        "result": {
+          "context": {
+            "slot": 518004717
+          },
+          "value": [
+            null
+          ]
+        }
+      }
+    },
+    {
+      "at": "2026-11-02T22:26:19.801Z",
+      "provider": "Helius devnet",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 15,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "3nr1sD9rqoRSiWUTg4Du5KfQtDGf3BPymGfJMJ2kMduV79cu96yJpEeeWJqqhohPx2Z7uffmss9tQ9Bgd3xmCR2H"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 15,
+        "result": {
+          "context": {
+            "slot": 518004723
+          },
+          "value": [
+            {
+              "slot": 518004720,
+              "confirmations": null,
+              "status": {
+                "Ok": null
+              },
+              "err": null,
+              "confirmationStatus": "finalized"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "at": "2026-11-02T22:26:20.085Z",
+      "provider": "Helius devnet",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 16,
+        "method": "getAccountInfo",
+        "params": [
+          "9DZKMJJ7LQkWD8XJgoRt6SK7bED92zzfXprxtthJuFg5",
+          {
+            "commitment": "finalized",
+            "encoding": "jsonParsed",
+            "minContextSlot": 518004720
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "slot": 518004724,
+            "apiVersion": "4.3.0-alpha.2"
+          },
+          "value": {
+            "lamports": 1488440,
+            "data": {
+              "program": "spl-token",
+              "parsed": {
+                "info": {
+                  "isNative": false,
+                  "mint": "47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78",
+                  "owner": "2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY",
+                  "state": "initialized",
+                  "tokenAmount": {
+                    "amount": "110",
+                    "decimals": 0,
+                    "uiAmount": 110,
+                    "uiAmountString": "110"
+                  }
+                },
+                "type": "account"
+              },
+              "space": 165
+            },
+            "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "executable": false,
+            "rentEpoch": 18446744073709552000,
+            "space": 165
+          }
+        },
+        "id": 16
+      }
+    },
+    {
+      "at": "2026-11-02T22:26:20.358Z",
+      "provider": "Helius devnet",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 17,
+        "method": "getMultipleAccounts",
+        "params": [
+          [
+            "8yT166QroMD8UazsqecuPWC1214k8LmgDPjoyexAcsJN",
+            "9DZKMJJ7LQkWD8XJgoRt6SK7bED92zzfXprxtthJuFg5"
+          ],
+          {
+            "commitment": "finalized",
+            "encoding": "jsonParsed",
+            "minContextSlot": 518004720
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "slot": 518004725,
+            "apiVersion": "4.3.0-alpha.2"
+          },
+          "value": [
+            {
+              "lamports": 1488440,
+              "data": {
+                "program": "spl-token",
+                "parsed": {
+                  "info": {
+                    "isNative": false,
+                    "mint": "47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78",
+                    "owner": "2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY",
+                    "state": "initialized",
+                    "tokenAmount": {
+                      "amount": "90",
+                      "decimals": 0,
+                      "uiAmount": 90,
+                      "uiAmountString": "90"
+                    }
+                  },
+                  "type": "account"
+                },
+                "space": 165
+              },
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "executable": false,
+              "rentEpoch": 18446744073709552000,
+              "space": 165
+            },
+            {
+              "lamports": 1488440,
+              "data": {
+                "program": "spl-token",
+                "parsed": {
+                  "info": {
+                    "isNative": false,
+                    "mint": "47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78",
+                    "owner": "2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY",
+                    "state": "initialized",
+                    "tokenAmount": {
+                      "amount": "110",
+                      "decimals": 0,
+                      "uiAmount": 110,
+                      "uiAmountString": "110"
+                    }
+                  },
+                  "type": "account"
+                },
+                "space": 165
+              },
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "executable": false,
+              "rentEpoch": 18446744073709552000,
+              "space": 165
+            }
+          ]
+        },
+        "id": 17
+      }
+    },
+    {
+      "at": "2026-11-02T22:26:20.656Z",
+      "provider": "Helius devnet",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 18,
+        "method": "getTransaction",
+        "params": [
+          "3nr1sD9rqoRSiWUTg4Du5KfQtDGf3BPymGfJMJ2kMduV79cu96yJpEeeWJqqhohPx2Z7uffmss9tQ9Bgd3xmCR2H",
+          {
+            "commitment": "finalized",
+            "encoding": "json",
+            "maxSupportedTransactionVersion": 0
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 18,
+        "result": {
+          "transaction": {
+            "signatures": [
+              "3nr1sD9rqoRSiWUTg4Du5KfQtDGf3BPymGfJMJ2kMduV79cu96yJpEeeWJqqhohPx2Z7uffmss9tQ9Bgd3xmCR2H"
+            ],
+            "message": {
+              "header": {
+                "numRequiredSignatures": 1,
+                "numReadonlySignedAccounts": 0,
+                "numReadonlyUnsignedAccounts": 2
+              },
+              "accountKeys": [
+                "2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY",
+                "8yT166QroMD8UazsqecuPWC1214k8LmgDPjoyexAcsJN",
+                "9DZKMJJ7LQkWD8XJgoRt6SK7bED92zzfXprxtthJuFg5",
+                "47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78",
+                "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+              ],
+              "recentBlockhash": "4QztS8CwGeq3foNaJKGbqQJQvnHFCauaJdmfXZAfvqVn",
+              "instructions": [
+                {
+                  "programIdIndex": 4,
+                  "accounts": [
+                    1,
+                    3,
+                    2,
+                    0
+                  ],
+                  "data": "gEL9jRtLKLGrK",
+                  "stackHeight": 1
+                }
+              ]
+            }
+          },
+          "meta": {
+            "err": null,
+            "status": {
+              "Ok": null
+            },
+            "fee": 5000,
+            "preBalances": [
+              20936320,
+              1488440,
+              1488440,
+              1066800,
+              20423277856
+            ],
+            "postBalances": [
+              20931320,
+              1488440,
+              1488440,
+              1066800,
+              20423277856
+            ],
+            "innerInstructions": [],
+            "logMessages": [
+              "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+              "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 200000 compute units",
+              "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success"
+            ],
+            "preTokenBalances": [
+              {
+                "accountIndex": 1,
+                "mint": "47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78",
+                "uiTokenAmount": {
+                  "uiAmount": 100,
+                  "decimals": 0,
+                  "amount": "100",
+                  "uiAmountString": "100"
+                },
+                "owner": "2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY",
+                "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+              },
+              {
+                "accountIndex": 2,
+                "mint": "47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78",
+                "uiTokenAmount": {
+                  "uiAmount": 100,
+                  "decimals": 0,
+                  "amount": "100",
+                  "uiAmountString": "100"
+                },
+                "owner": "2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY",
+                "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+              }
+            ],
+            "postTokenBalances": [
+              {
+                "accountIndex": 1,
+                "mint": "47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78",
+                "uiTokenAmount": {
+                  "uiAmount": 90,
+                  "decimals": 0,
+                  "amount": "90",
+                  "uiAmountString": "90"
+                },
+                "owner": "2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY",
+                "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+              },
+              {
+                "accountIndex": 2,
+                "mint": "47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78",
+                "uiTokenAmount": {
+                  "uiAmount": 110,
+                  "decimals": 0,
+                  "amount": "110",
+                  "uiAmountString": "110"
+                },
+                "owner": "2PWsVRsYPKmg4KbPAy2ArQJtoYMeCW4c4TYFJCRNA1BY",
+                "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+              }
+            ],
+            "rewards": [],
+            "loadedAddresses": {
+              "writable": [],
+              "readonly": []
+            },
+            "computeUnitsConsumed": 105,
+            "costUnits": 1759
+          },
+          "version": "legacy",
+          "slot": 518004720,
+          "transactionIndex": 88,
+          "blockTime": 1793658378
+        }
+      }
+    },
+    {
+      "at": "2026-11-02T22:26:20.979Z",
+      "provider": "Helius devnet",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 19,
+        "method": "getAccountInfo",
+        "params": [
+          "47iGxQW9CTmiNS4uKrW7QtiQGKUEih6vZHSReRieWn78",
+          {
+            "commitment": "finalized",
+            "encoding": "jsonParsed",
+            "minContextSlot": 518004720
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "slot": 518004728,
+            "apiVersion": "4.3.0-alpha.2"
+          },
+          "value": {
+            "lamports": 1066800,
+            "data": {
+              "program": "spl-token",
+              "parsed": {
+                "info": {
+                  "decimals": 0,
+                  "freezeAuthority": null,
+                  "isInitialized": true,
+                  "mintAuthority": null,
+                  "supply": "200"
+                },
+                "type": "mint"
+              },
+              "space": 82
+            },
+            "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "executable": false,
+            "rentEpoch": 18446744073709552000,
+            "space": 82
+          }
+        },
+        "id": 19
+      }
+    }
+  ]
+}

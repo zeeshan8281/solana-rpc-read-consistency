@@ -1,9 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500">
 <rect width="1200" height="500" fill="white"/>
 <text x="36" y="24" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#152536">One total, assembled from two state views</text>
-<text x="36" y="68" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#4c5b69">MEASURED · LOCAL AGAVE 4.4.0 · FINALIZED READS</text>
+<text x="36" y="68" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#4c5b69">MEASURED · HELIUS DEVNET · FINALIZED READS</text>
 <rect x="36" y="112" width="404" height="210" rx="10" fill="white" stroke="#b9c5cf" stroke-width="2"/>
-<text x="58" y="130" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#152536">Earlier finalized view · slot 59</text>
+<text x="58" y="130" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#152536">Baseline pair · 518004712</text>
+<text x="58" y="155" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#4c5b69">Separate A read: slot 518004713</text>
 <rect x="52" y="174" width="372" height="48" rx="5" fill="#fff0e8" stroke="#a33618" stroke-width="2"/>
 <text x="66" y="186" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#a33618">A  (read 1)</text>
 <text x="408" y="182" dominant-baseline="text-before-edge" text-anchor="end" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#a33618">100</text>
@@ -11,7 +12,8 @@
 <text x="408" y="234" dominant-baseline="text-before-edge" text-anchor="end" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#152536">100</text>
 <text x="66" y="285" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#152536">A + B = 200</text>
 <rect x="760" y="112" width="404" height="210" rx="10" fill="white" stroke="#b9c5cf" stroke-width="2"/>
-<text x="782" y="130" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#152536">Later finalized view · slot 92</text>
+<text x="782" y="130" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#152536">Final pair · 518004725</text>
+<text x="782" y="155" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#4c5b69">Separate B read: slot 518004724</text>
 <text x="790" y="186" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#152536">A</text>
 <text x="1132" y="182" dominant-baseline="text-before-edge" text-anchor="end" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#152536">90</text>
 <rect x="776" y="226" width="372" height="48" rx="5" fill="#eaf3fb" stroke="#12568e" stroke-width="2"/>
@@ -19,10 +21,10 @@
 <text x="1132" y="234" dominant-baseline="text-before-edge" text-anchor="end" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#12568e">110</text>
 <text x="790" y="285" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#152536">A + B = 200</text>
 <text x="600" y="166" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#152536">Transfer 10</text>
-<text x="600" y="205" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#152536">A → B · slot 91</text>
+<text x="600" y="205" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#152536">Slot 518004720</text>
 <path d="M474 251 H726" stroke="#4c5b69" stroke-width="3"/><polygon points="726,251 714,244 714,258" fill="#4c5b69"/>
 <rect x="140" y="356" width="920" height="108" rx="10" fill="#f7f9fb" stroke="#152536" stroke-width="2"/>
 <text x="600" y="373" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#4c5b69">CLIENT COMBINES THE TWO SELECTED VALUES</text>
-<text x="600" y="411" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#152536">A at 59: 100  +  B at 92: 110  =  210</text>
-<text x="600" y="477" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#4c5b69">Neither complete view contains a total of 210.</text>
+<text x="600" y="411" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#152536">Old A: 100  +  new B: 110  =  210</text>
+<text x="600" y="477" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#4c5b69">Grouped read at 518004725: 90 + 110 = 200.</text>
 </svg>
