@@ -1,0 +1,12 @@
+{
+  "started": "2026-11-02T21:56:44.420099+00:00",
+  "completed": "2026-11-02T21:57:32.126375+00:00",
+  "exitCode": 0,
+  "command": "node code/reproduce-mixed-total.mjs --local",
+  "scriptSha256": "b80f9658316687bb021ef41628ecff3452307da257ac35fc6f155533a919473e",
+  "validator": "Agave 4.4.0",
+  "network": "local-validator",
+  "lockfileSha256": "c7f3585ef2a0dea2096a16c41ae543a1764dc6b16cf4cf460d817ede7f6d57e1",
+  "node": "v24.22.1",
+  "validatorArchiveSha256": "7f54760a17ccc51b9aee2e019ef1f841a06edfaa8104ba30f94a877ceec0e8e0"
+}

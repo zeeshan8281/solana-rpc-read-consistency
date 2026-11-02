@@ -3,3 +3,7 @@
 .DS_Store
 /token-pair-run.json
 /failed-requests.json
+node_modules/
+.devnet/
+.local-validator/
+/runs/

@@ -6,7 +6,7 @@ A treasury dashboard tracks a token across two accounts. Each holds 100 tokens. 
 
 Now refresh the dashboard. Its first RPC call reads A before the transfer: 100. Its second call reads B after the transfer: 110. Both requests succeed. The dashboard displays 210.
 
-This is an illustrative example using two token accounts controlled by one wallet, holding the same non-native classic SPL token, with no other token movements. The transaction fee is paid in SOL and does not change this token total. How can an application combine two valid responses into a balance that neither complete state contains?
+The experiment below reproduces this with a signed transfer on a local Agave validator. One wallet controls both accounts, holding the same classic SPL token with zero decimals. There are no other token movements; SOL pays the transaction fee. The RPC responses and transaction receipt are saved alongside the code. How did two valid reads produce a total that neither complete state contains?
 
 ## Each request chooses a view
 
@@ -14,7 +14,7 @@ Solana [transactions execute atomically](https://solana.com/docs/core/transactio
 
 ![Two complete views and the mixed total](figures/01-mixed-account-views.png)
 
-Figure 1. The highlighted values come from different observations. These balances and slot labels are illustrative, not a captured transaction.
+Figure 1. Measured local-validator states: A was read at slot 59; B at slot 92. The transfer executed in slot 91 and was finalized before the second read.
 
 Inside Agave, a Bank represents account state for a slot. An account read uses a selected Bank to resolve the account. That choice happens for each request: the [getAccountInfo handler](https://github.com/anza-xyz/agave/blob/a1468974d804b413285d87030f20bd40ae22ffaa/rpc/src/rpc.rs#L541-L568) obtains a Bank, looks up the account and constructs the response.
 
@@ -30,14 +30,15 @@ For a known set of addresses, [getMultipleAccounts](https://www.helius.dev/docs/
 
 At confirmed or finalized commitment, this is a [frozen Bank](https://github.com/anza-xyz/agave/blob/a1468974d804b413285d87030f20bd40ae22ffaa/runtime/src/bank.rs#L1-L31): it has finished processing transactions for its slot, so its account state no longer changes. For our treasury, the pair is either 100 and 100, or 90 and 110. Both add to 200.
 
-The [complete example](https://github.com/zeeshan8281/solana-rpc-read-consistency/blob/main/code/read-token-pair.mjs) keeps HTTP handling and validation in the accompanying repository. The grouped request is:
+The [controlled example](https://github.com/zeeshan8281/solana-rpc-read-consistency/blob/main/code/reproduce-mixed-total.mjs) keeps setup, signing and validation in the repository. After finalizing the transfer, it makes this grouped request (line-wrapped here):
 
 ```js
-const grouped = await rpc('getMultipleAccounts', [addresses, config]);
-assert(!grouped.error, 'The grouped read failed.');
+const grouped = await rpc('getMultipleAccounts', [
+  addresses, { ...config, minContextSlot: transfer.slot },
+]);
 ```
 
-Here, `addresses` contains the two token-account addresses and `config` requests `confirmed` commitment with `jsonParsed` encoding. Parsing makes the token fields readable; it does not change the read boundary. The helper in the complete example checks the account program, mint and decimals before adding raw token amounts with `BigInt`. A missing account causes a failure instead of silently becoming a zero balance.
+Here, `addresses` contains the two token-account addresses; `config` requests `finalized` commitment and `jsonParsed` encoding. The floor prevents a view older than the transfer slot. Parsing makes fields readable without changing the read boundary. The helper rejects RPC errors and validates each account’s program, mint, owner and decimals. It adds raw integer-string amounts with `BigInt`; a missing account fails instead of becoming zero.
 
 Use token-account addresses here. A wallet address identifies the wallet, and a mint address identifies the token; neither is a substitute for the accounts holding the balances. A wallet can have [multiple token accounts for one mint](https://solana.com/docs/tokens). Keep the response entries attached to their input addresses when caching or displaying them, since a correct list read can still become a wrong calculation if the application mixes up its entries.
 
@@ -67,7 +68,7 @@ Figure 2. A selected slot below S fails the floor check. S and later slots can p
 
 For the treasury, this means the second call may still read B after the transfer. The floor rejects an older evaluation context, but it cannot make two separate requests share the earlier state. It also supplies no fork-continuity guarantee.
 
-The example deliberately sets a floor far ahead of the current view to make the error visible:
+A separate [read-only Helius example](https://github.com/zeeshan8281/solana-rpc-read-consistency/blob/main/code/read-token-pair.mjs) sets a floor far ahead of the current view to make the rejection visible:
 
 ```js
 const floor = grouped.result.context.slot + 1_000_000;
@@ -78,24 +79,24 @@ const future = await rpc('getAccountInfo', [accountA, {
 
 Use this parameter when an operation requires a context at least as recent as an observed slot. If the node cannot meet that floor, the application must retry later or fail the operation. The large offset here exists only to make the rejection visible.
 
-## Inspect the response contexts
+## Reproduce the wrong total
 
-The companion script lets you inspect response contexts on Helius mainnet. It reads two public USDC token accounts separately and together, then deliberately triggers the minimum-slot error. It does not attempt to reproduce the transfer in Figure 1. You need Node.js 20 or later and a Helius API key. The script has no package dependencies and sends no transactions.
+The reproduction creates a fresh mint and two ordinary token accounts, puts 100 tokens in each, and revokes mint authority. It reads A, sends 10 tokens from A to B, waits for finalization, then reads B. Finally, it reads the pair together and checks the transfer receipt. These are executed transactions on a running local validator, not mocked responses or transaction simulations.
 
-Save [the source](https://github.com/zeeshan8281/solana-rpc-read-consistency/blob/main/code/read-token-pair.mjs) as `read-token-pair.mjs`, then run:
+Follow the [repository setup](https://github.com/zeeshan8281/solana-rpc-read-consistency#run) to start Agave’s local validator. With Node.js 22 or later, run these commands from the repository:
 
 ```sh
-export HELIUS_API_KEY='YOUR_API_KEY'
-node read-token-pair.mjs
+npm ci --ignore-scripts
+npm run reproduce -- --local
 ```
 
-In the run on 2 November 2026 at 20:21 UTC, using Node.js 24.22.1, both independent reads and the grouped read reported slot 464627689. Both totals were 1975623 raw USDC units, or 1.975623 USDC at six decimals. The final request asked for a minimum of 465627689 and received error -32016. The process exited with code 0. This run did not produce a conflicting total.
+The captured run began on 2 November 2026 at 21:56 UTC, using Agave 4.4.0 and Node.js 24.22.1. A returned 100 at slot 59. The transfer executed in slot 91; after finalization, B returned 110 at slot 92. The mixed total was 210. The grouped read at slot 92 returned 90 and 110: total 200. The process exited 0.
 
-![Captured output from the token-account experiment](figures/03-token-pair-run.jpg)
+![Actual stdout from the controlled local transfer](figures/04-controlled-local-run.jpg)
 
-Screenshot. Actual process stdout displayed in a browser log viewer. Full decoded responses and the account addresses are saved in `token-pair-run.json`.
+Screenshot. Verbatim stdout excerpt displayed in a browser log viewer. Full stdout, stderr and decoded RPC responses are saved in the repository.
 
-The public accounts can receive unrelated transfers, so their combined balance is not conserved. A different total would need investigation; equality is also a valid result. This run checks response fields and the expected error. The transfer diagram explains the consistency problem separately.
+The [saved receipt](https://github.com/zeeshan8281/solana-rpc-read-consistency/blob/main/evidence/controlled-local-run/controlled-run.json) reports `err: null`, with token balances changing from `[100,100]` to `[90,110]`. The script matches those entries to addresses using `accountIndex`. This ordering is deliberate: it demonstrates the failure mode, not its frequency in production. The local run did not use Helius. Separate Helius mainnet reads in the repository checked response contexts and error `-32016`; those returned equal totals.
 
 ## Where the grouped read stops helping
 

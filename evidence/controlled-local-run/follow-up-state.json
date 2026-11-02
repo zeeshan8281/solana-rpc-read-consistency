@@ -1,0 +1,164 @@
+{
+  "checkedAt": "2026-11-02T22:10:35.913204+00:00",
+  "network": "local-validator",
+  "note": "Fresh state still 90/110. Original transaction receipt was captured during the run; later lookup returned null after local ledger pruning (first available block now exceeds transfer slot).",
+  "records": [
+    {
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "getGenesisHash",
+        "params": []
+      },
+      "response": {
+        "jsonrpc": "2.0",
+        "result": "FuYFwYv5Cxdc9fctgczwC5yT9gV5Ct1sjc7jJNLkRGNd",
+        "id": 1
+      }
+    },
+    {
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "5zRhErzFM15eEyJFCDZo6VKEejEkEh2wJX6GotTn7YDyNh46YskenZAUuhHK4NU7YdZA18boPaib3B31ccfhTzVN",
+            "Zn9i9vtfMxuxM8iSzXJ8oapGNc5n7RvmkJTqpCngfo3dKfuJY1uA16QJXAdKFu7fzrZSnGcQtmZchKB3x2oD2Wz"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 1731
+          },
+          "value": [
+            null,
+            null
+          ]
+        },
+        "id": 2
+      }
+    },
+    {
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "method": "getTransaction",
+        "params": [
+          "Zn9i9vtfMxuxM8iSzXJ8oapGNc5n7RvmkJTqpCngfo3dKfuJY1uA16QJXAdKFu7fzrZSnGcQtmZchKB3x2oD2Wz",
+          {
+            "commitment": "finalized",
+            "encoding": "json",
+            "maxSupportedTransactionVersion": 0
+          }
+        ]
+      },
+      "response": {
+        "jsonrpc": "2.0",
+        "result": null,
+        "id": 3
+      }
+    },
+    {
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "method": "getFirstAvailableBlock",
+        "params": []
+      },
+      "response": {
+        "jsonrpc": "2.0",
+        "result": 104,
+        "id": 4
+      }
+    },
+    {
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "method": "getMultipleAccounts",
+        "params": [
+          [
+            "9RXnJSL25LAqr6PnS86gkyhiHhrBfp5dhubeC48o7Uyv",
+            "9xX2P1cFdmWgYTC6W4cHeHfEH4NVwgnWR13s6MenNNQ8"
+          ],
+          {
+            "commitment": "finalized",
+            "encoding": "jsonParsed"
+          }
+        ]
+      },
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 1700
+          },
+          "value": [
+            {
+              "data": {
+                "parsed": {
+                  "info": {
+                    "isNative": false,
+                    "mint": "5T8rAqFD4cBJR1gPXxHXKDNxmFW2fCULjfP1Uyhutsmo",
+                    "owner": "FbWLwn25m3cT2W353HXncp4pY7XWCX35xCw85cLAnTa6",
+                    "state": "initialized",
+                    "tokenAmount": {
+                      "amount": "90",
+                      "decimals": 0,
+                      "uiAmount": 90.0,
+                      "uiAmountString": "90"
+                    }
+                  },
+                  "type": "account"
+                },
+                "program": "spl-token",
+                "space": 165
+              },
+              "executable": false,
+              "lamports": 2039280,
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "rentEpoch": 18446744073709551615,
+              "space": 165
+            },
+            {
+              "data": {
+                "parsed": {
+                  "info": {
+                    "isNative": false,
+                    "mint": "5T8rAqFD4cBJR1gPXxHXKDNxmFW2fCULjfP1Uyhutsmo",
+                    "owner": "FbWLwn25m3cT2W353HXncp4pY7XWCX35xCw85cLAnTa6",
+                    "state": "initialized",
+                    "tokenAmount": {
+                      "amount": "110",
+                      "decimals": 0,
+                      "uiAmount": 110.0,
+                      "uiAmountString": "110"
+                    }
+                  },
+                  "type": "account"
+                },
+                "program": "spl-token",
+                "space": 165
+              },
+              "executable": false,
+              "lamports": 2039280,
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "rentEpoch": 18446744073709551615,
+              "space": 165
+            }
+          ]
+        },
+        "id": 5
+      }
+    }
+  ]
+}

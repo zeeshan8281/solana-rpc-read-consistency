@@ -1,0 +1,8 @@
+Before: A=100 B=100 total=200 | slot 59
+Read A before transfer: 100 | slot 59
+Transfer: 10 tokens A -> B | finalized slot 91
+Read B after transfer: 110 | slot 92
+MIXED TOTAL: 100 + 110 = 210
+GROUPED TOTAL: 90 + 110 = 200 | slot 92
+Transaction metadata: [100,100] -> [90,110]; err=null
+Mint authority revoked; supply=200. All assertions passed.

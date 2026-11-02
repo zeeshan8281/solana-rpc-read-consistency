@@ -1,0 +1,14 @@
+{
+  "name": "solana-rpc-read-consistency",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "reproduce": "node code/reproduce-mixed-total.mjs"
+  },
+  "engines": { "node": ">=22" },
+  "dependencies": {
+    "@solana/spl-token": "0.4.15",
+    "@solana/web3.js": "1.99.0"
+  }
+}

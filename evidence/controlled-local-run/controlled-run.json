@@ -1,0 +1,2678 @@
+{
+  "started": "2026-11-02T21:56:44.898Z",
+  "completed": "2026-11-02T21:57:32.114Z",
+  "node": "v24.22.1",
+  "network": "local-validator",
+  "genesisHash": "FuYFwYv5Cxdc9fctgczwC5yT9gV5Ct1sjc7jJNLkRGNd",
+  "validatorVersion": {
+    "feature-set": 3722100051,
+    "solana-core": "4.4.0"
+  },
+  "commitment": "finalized",
+  "owner": "FbWLwn25m3cT2W353HXncp4pY7XWCX35xCw85cLAnTa6",
+  "mint": "5T8rAqFD4cBJR1gPXxHXKDNxmFW2fCULjfP1Uyhutsmo",
+  "addresses": [
+    "9RXnJSL25LAqr6PnS86gkyhiHhrBfp5dhubeC48o7Uyv",
+    "9xX2P1cFdmWgYTC6W4cHeHfEH4NVwgnWR13s6MenNNQ8"
+  ],
+  "decimals": 0,
+  "setup": {
+    "signature": "5zRhErzFM15eEyJFCDZo6VKEejEkEh2wJX6GotTn7YDyNh46YskenZAUuhHK4NU7YdZA18boPaib3B31ccfhTzVN",
+    "slot": 59
+  },
+  "transfer": {
+    "signature": "Zn9i9vtfMxuxM8iSzXJ8oapGNc5n7RvmkJTqpCngfo3dKfuJY1uA16QJXAdKFu7fzrZSnGcQtmZchKB3x2oD2Wz",
+    "slot": 91
+  },
+  "beforeSlot": 59,
+  "firstReadSlot": 59,
+  "secondReadSlot": 92,
+  "groupedSlot": 92,
+  "before": [
+    "100",
+    "100"
+  ],
+  "firstA": "100",
+  "secondB": "110",
+  "mixedTotal": "210",
+  "after": [
+    "90",
+    "110"
+  ],
+  "groupedTotal": "200",
+  "receiptPre": [
+    "100",
+    "100"
+  ],
+  "receiptPost": [
+    "90",
+    "110"
+  ],
+  "mintSupply": "200",
+  "sourceSha256": "b80f9658316687bb021ef41628ecff3452307da257ac35fc6f155533a919473e",
+  "records": [
+    {
+      "at": "2026-11-02T21:56:44.906Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "getGenesisHash",
+        "params": []
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": "FuYFwYv5Cxdc9fctgczwC5yT9gV5Ct1sjc7jJNLkRGNd",
+        "id": 1
+      }
+    },
+    {
+      "at": "2026-11-02T21:56:44.942Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "method": "getVersion",
+        "params": []
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "feature-set": 3722100051,
+          "solana-core": "4.4.0"
+        },
+        "id": 2
+      }
+    },
+    {
+      "at": "2026-11-02T21:56:44.966Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "method": "getBalance",
+        "params": [
+          "FbWLwn25m3cT2W353HXncp4pY7XWCX35xCw85cLAnTa6",
+          {
+            "commitment": "finalized"
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 0
+          },
+          "value": 0
+        },
+        "id": 3
+      }
+    },
+    {
+      "at": "2026-11-02T21:56:44.967Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "method": "requestAirdrop",
+        "params": [
+          "FbWLwn25m3cT2W353HXncp4pY7XWCX35xCw85cLAnTa6",
+          1000000000
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": "2WDzC3sVNvdET2U1bk7VVWFsjRSbV89bxQKuR1qEgzGwGHXzvb2NYK56sqx4VAGcyx3uF89dQVcg6s6PkdWy9fwU",
+        "id": 4
+      }
+    },
+    {
+      "at": "2026-11-02T21:56:44.970Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "2WDzC3sVNvdET2U1bk7VVWFsjRSbV89bxQKuR1qEgzGwGHXzvb2NYK56sqx4VAGcyx3uF89dQVcg6s6PkdWy9fwU"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 25
+          },
+          "value": [
+            null
+          ]
+        },
+        "id": 5
+      }
+    },
+    {
+      "at": "2026-11-02T21:56:45.973Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 6,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "2WDzC3sVNvdET2U1bk7VVWFsjRSbV89bxQKuR1qEgzGwGHXzvb2NYK56sqx4VAGcyx3uF89dQVcg6s6PkdWy9fwU"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 27
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 2,
+              "err": null,
+              "slot": 26,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 6
+      }
+    },
+    {
+      "at": "2026-11-02T21:56:46.976Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 7,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "2WDzC3sVNvdET2U1bk7VVWFsjRSbV89bxQKuR1qEgzGwGHXzvb2NYK56sqx4VAGcyx3uF89dQVcg6s6PkdWy9fwU"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 29
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 4,
+              "err": null,
+              "slot": 26,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 7
+      }
+    },
+    {
+      "at": "2026-11-02T21:56:47.977Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 8,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "2WDzC3sVNvdET2U1bk7VVWFsjRSbV89bxQKuR1qEgzGwGHXzvb2NYK56sqx4VAGcyx3uF89dQVcg6s6PkdWy9fwU"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 31
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 6,
+              "err": null,
+              "slot": 26,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 8
+      }
+    },
+    {
+      "at": "2026-11-02T21:56:48.979Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 9,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "2WDzC3sVNvdET2U1bk7VVWFsjRSbV89bxQKuR1qEgzGwGHXzvb2NYK56sqx4VAGcyx3uF89dQVcg6s6PkdWy9fwU"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 34
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 9,
+              "err": null,
+              "slot": 26,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 9
+      }
+    },
+    {
+      "at": "2026-11-02T21:56:49.981Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 10,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "2WDzC3sVNvdET2U1bk7VVWFsjRSbV89bxQKuR1qEgzGwGHXzvb2NYK56sqx4VAGcyx3uF89dQVcg6s6PkdWy9fwU"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 36
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 11,
+              "err": null,
+              "slot": 26,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 10
+      }
+    },
+    {
+      "at": "2026-11-02T21:56:50.983Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 11,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "2WDzC3sVNvdET2U1bk7VVWFsjRSbV89bxQKuR1qEgzGwGHXzvb2NYK56sqx4VAGcyx3uF89dQVcg6s6PkdWy9fwU"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 38
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 13,
+              "err": null,
+              "slot": 26,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 11
+      }
+    },
+    {
+      "at": "2026-11-02T21:56:51.985Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 12,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "2WDzC3sVNvdET2U1bk7VVWFsjRSbV89bxQKuR1qEgzGwGHXzvb2NYK56sqx4VAGcyx3uF89dQVcg6s6PkdWy9fwU"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 40
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 15,
+              "err": null,
+              "slot": 26,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 12
+      }
+    },
+    {
+      "at": "2026-11-02T21:56:52.986Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 13,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "2WDzC3sVNvdET2U1bk7VVWFsjRSbV89bxQKuR1qEgzGwGHXzvb2NYK56sqx4VAGcyx3uF89dQVcg6s6PkdWy9fwU"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 42
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 17,
+              "err": null,
+              "slot": 26,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 13
+      }
+    },
+    {
+      "at": "2026-11-02T21:56:53.988Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 14,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "2WDzC3sVNvdET2U1bk7VVWFsjRSbV89bxQKuR1qEgzGwGHXzvb2NYK56sqx4VAGcyx3uF89dQVcg6s6PkdWy9fwU"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 44
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 19,
+              "err": null,
+              "slot": 26,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 14
+      }
+    },
+    {
+      "at": "2026-11-02T21:56:55.005Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 15,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "2WDzC3sVNvdET2U1bk7VVWFsjRSbV89bxQKuR1qEgzGwGHXzvb2NYK56sqx4VAGcyx3uF89dQVcg6s6PkdWy9fwU"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 46
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 21,
+              "err": null,
+              "slot": 26,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 15
+      }
+    },
+    {
+      "at": "2026-11-02T21:56:56.007Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 16,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "2WDzC3sVNvdET2U1bk7VVWFsjRSbV89bxQKuR1qEgzGwGHXzvb2NYK56sqx4VAGcyx3uF89dQVcg6s6PkdWy9fwU"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 48
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 23,
+              "err": null,
+              "slot": 26,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 16
+      }
+    },
+    {
+      "at": "2026-11-02T21:56:57.008Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 17,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "2WDzC3sVNvdET2U1bk7VVWFsjRSbV89bxQKuR1qEgzGwGHXzvb2NYK56sqx4VAGcyx3uF89dQVcg6s6PkdWy9fwU"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 50
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 25,
+              "err": null,
+              "slot": 26,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 17
+      }
+    },
+    {
+      "at": "2026-11-02T21:56:58.010Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 18,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "2WDzC3sVNvdET2U1bk7VVWFsjRSbV89bxQKuR1qEgzGwGHXzvb2NYK56sqx4VAGcyx3uF89dQVcg6s6PkdWy9fwU"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 52
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 27,
+              "err": null,
+              "slot": 26,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 18
+      }
+    },
+    {
+      "at": "2026-11-02T21:56:59.011Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 19,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "2WDzC3sVNvdET2U1bk7VVWFsjRSbV89bxQKuR1qEgzGwGHXzvb2NYK56sqx4VAGcyx3uF89dQVcg6s6PkdWy9fwU"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 54
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 29,
+              "err": null,
+              "slot": 26,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 19
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:00.012Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 20,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "2WDzC3sVNvdET2U1bk7VVWFsjRSbV89bxQKuR1qEgzGwGHXzvb2NYK56sqx4VAGcyx3uF89dQVcg6s6PkdWy9fwU"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 56
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 31,
+              "err": null,
+              "slot": 26,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 20
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:01.016Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 21,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "2WDzC3sVNvdET2U1bk7VVWFsjRSbV89bxQKuR1qEgzGwGHXzvb2NYK56sqx4VAGcyx3uF89dQVcg6s6PkdWy9fwU"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 58
+          },
+          "value": [
+            {
+              "confirmationStatus": "finalized",
+              "confirmations": null,
+              "err": null,
+              "slot": 26,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 21
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:01.018Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 22,
+        "method": "getMinimumBalanceForRentExemption",
+        "params": [
+          82
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": 1461600,
+        "id": 22
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:01.019Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 23,
+        "method": "getMinimumBalanceForRentExemption",
+        "params": [
+          165
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": 2039280,
+        "id": 23
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:01.021Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 24,
+        "method": "getLatestBlockhash",
+        "params": [
+          {
+            "commitment": "finalized"
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 27
+          },
+          "value": {
+            "blockhash": "E1P1sZRgFiLZ23M6QQPUCrwc5Xq77Pdvk1dxMFLmUzsY",
+            "lastValidBlockHeight": 177
+          }
+        },
+        "id": 24
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:01.058Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 25,
+        "method": "sendTransaction",
+        "params": [
+          "BPmW/B/q3kedNfKxJJ0+C6CKZovypjdtOILQ+Z6Rc8C2DvJkqi3lo8C5fF9O2eSLZtzMVU5P6NJnS2BzK8slkgGh+nhvra65NPYTW+CODaYrR3oGJzVeM1jeupKXr9ygnp9Iy/GFFtQywlsCcEQ/9QBmIO8A/FA1kKK9tD/xv14JdfKlxjkATzAjFdrGQVtRvt0fhwY2Uky0ZQ3hLk1YGO3fBCErH6rTdfEzZaLBWg3ReuB7XvcMBsN8TSTbzXy3BklIqPdJjxQEGoenBcV4ayMglI/XvGnNABQbWgkB21PLdVm0e+sVfu3Fsu36LLPuREGJHnEUuea16NTPngbcrQIEAAIG2NqLL60eFoN9BLz2Bp7d8i1NClLjTiOV8gDXYiXtkl9CILjjdyW4v9KbJuHL2nts4NjtlgESctj8QOsCcYaG5n0mPTOIvrBHG3GEk59eVENfBot0g52EA/V5Ne9rhSwhhRZjTiSL7GCYFKGVzP7aw2fxC3O10VnsV4V2W5v58ekAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCpwUDSkGQmuf+pdABIpZ3vhsuKJSEQM3F+o3/lJL+iRM8JBAIAATQAAAAAYE0WAAAAAABSAAAAAAAAAAbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCpBQEBIxQA2NqLL60eFoN9BLz2Bp7d8i1NClLjTiOV8gDXYiXtkl8ABAIAAjQAAAAA8B0fAAAAAAClAAAAAAAAAAbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCpBQICASES2NqLL60eFoN9BLz2Bp7d8i1NClLjTiOV8gDXYiXtkl8EAgADNAAAAADwHR8AAAAAAKUAAAAAAAAABt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKkFAgMBIRLY2osvrR4Wg30EvPYGnt3yLU0KUuNOI5XyANdiJe2SXwUDAQIACQdkAAAAAAAAAAUDAQMACQdkAAAAAAAAAAUCAQADBgAA",
+          {
+            "encoding": "base64",
+            "preflightCommitment": "finalized",
+            "skipPreflight": false,
+            "maxRetries": 3
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": "5zRhErzFM15eEyJFCDZo6VKEejEkEh2wJX6GotTn7YDyNh46YskenZAUuhHK4NU7YdZA18boPaib3B31ccfhTzVN",
+        "id": 25
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:01.062Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 26,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "5zRhErzFM15eEyJFCDZo6VKEejEkEh2wJX6GotTn7YDyNh46YskenZAUuhHK4NU7YdZA18boPaib3B31ccfhTzVN"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 58
+          },
+          "value": [
+            null
+          ]
+        },
+        "id": 26
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:02.064Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 27,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "5zRhErzFM15eEyJFCDZo6VKEejEkEh2wJX6GotTn7YDyNh46YskenZAUuhHK4NU7YdZA18boPaib3B31ccfhTzVN"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 61
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 3,
+              "err": null,
+              "slot": 59,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 27
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:03.066Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 28,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "5zRhErzFM15eEyJFCDZo6VKEejEkEh2wJX6GotTn7YDyNh46YskenZAUuhHK4NU7YdZA18boPaib3B31ccfhTzVN"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 63
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 5,
+              "err": null,
+              "slot": 59,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 28
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:04.068Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 29,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "5zRhErzFM15eEyJFCDZo6VKEejEkEh2wJX6GotTn7YDyNh46YskenZAUuhHK4NU7YdZA18boPaib3B31ccfhTzVN"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 65
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 7,
+              "err": null,
+              "slot": 59,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 29
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:05.068Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 30,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "5zRhErzFM15eEyJFCDZo6VKEejEkEh2wJX6GotTn7YDyNh46YskenZAUuhHK4NU7YdZA18boPaib3B31ccfhTzVN"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 67
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 9,
+              "err": null,
+              "slot": 59,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 30
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:06.069Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 31,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "5zRhErzFM15eEyJFCDZo6VKEejEkEh2wJX6GotTn7YDyNh46YskenZAUuhHK4NU7YdZA18boPaib3B31ccfhTzVN"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 69
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 11,
+              "err": null,
+              "slot": 59,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 31
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:07.071Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 32,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "5zRhErzFM15eEyJFCDZo6VKEejEkEh2wJX6GotTn7YDyNh46YskenZAUuhHK4NU7YdZA18boPaib3B31ccfhTzVN"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 71
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 13,
+              "err": null,
+              "slot": 59,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 32
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:08.072Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 33,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "5zRhErzFM15eEyJFCDZo6VKEejEkEh2wJX6GotTn7YDyNh46YskenZAUuhHK4NU7YdZA18boPaib3B31ccfhTzVN"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 73
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 15,
+              "err": null,
+              "slot": 59,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 33
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:09.073Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 34,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "5zRhErzFM15eEyJFCDZo6VKEejEkEh2wJX6GotTn7YDyNh46YskenZAUuhHK4NU7YdZA18boPaib3B31ccfhTzVN"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 75
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 17,
+              "err": null,
+              "slot": 59,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 34
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:10.074Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 35,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "5zRhErzFM15eEyJFCDZo6VKEejEkEh2wJX6GotTn7YDyNh46YskenZAUuhHK4NU7YdZA18boPaib3B31ccfhTzVN"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 77
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 19,
+              "err": null,
+              "slot": 59,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 35
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:11.076Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 36,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "5zRhErzFM15eEyJFCDZo6VKEejEkEh2wJX6GotTn7YDyNh46YskenZAUuhHK4NU7YdZA18boPaib3B31ccfhTzVN"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 79
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 21,
+              "err": null,
+              "slot": 59,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 36
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:12.077Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 37,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "5zRhErzFM15eEyJFCDZo6VKEejEkEh2wJX6GotTn7YDyNh46YskenZAUuhHK4NU7YdZA18boPaib3B31ccfhTzVN"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 81
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 23,
+              "err": null,
+              "slot": 59,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 37
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:13.079Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 38,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "5zRhErzFM15eEyJFCDZo6VKEejEkEh2wJX6GotTn7YDyNh46YskenZAUuhHK4NU7YdZA18boPaib3B31ccfhTzVN"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 83
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 25,
+              "err": null,
+              "slot": 59,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 38
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:14.080Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 39,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "5zRhErzFM15eEyJFCDZo6VKEejEkEh2wJX6GotTn7YDyNh46YskenZAUuhHK4NU7YdZA18boPaib3B31ccfhTzVN"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 85
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 27,
+              "err": null,
+              "slot": 59,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 39
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:15.082Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 40,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "5zRhErzFM15eEyJFCDZo6VKEejEkEh2wJX6GotTn7YDyNh46YskenZAUuhHK4NU7YdZA18boPaib3B31ccfhTzVN"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 88
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 30,
+              "err": null,
+              "slot": 59,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 40
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:16.084Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 41,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "5zRhErzFM15eEyJFCDZo6VKEejEkEh2wJX6GotTn7YDyNh46YskenZAUuhHK4NU7YdZA18boPaib3B31ccfhTzVN"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 90
+          },
+          "value": [
+            {
+              "confirmationStatus": "finalized",
+              "confirmations": null,
+              "err": null,
+              "slot": 59,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 41
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:16.085Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 42,
+        "method": "getMultipleAccounts",
+        "params": [
+          [
+            "9RXnJSL25LAqr6PnS86gkyhiHhrBfp5dhubeC48o7Uyv",
+            "9xX2P1cFdmWgYTC6W4cHeHfEH4NVwgnWR13s6MenNNQ8"
+          ],
+          {
+            "commitment": "finalized",
+            "encoding": "jsonParsed",
+            "minContextSlot": 59
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 59
+          },
+          "value": [
+            {
+              "data": {
+                "parsed": {
+                  "info": {
+                    "isNative": false,
+                    "mint": "5T8rAqFD4cBJR1gPXxHXKDNxmFW2fCULjfP1Uyhutsmo",
+                    "owner": "FbWLwn25m3cT2W353HXncp4pY7XWCX35xCw85cLAnTa6",
+                    "state": "initialized",
+                    "tokenAmount": {
+                      "amount": "100",
+                      "decimals": 0,
+                      "uiAmount": 100,
+                      "uiAmountString": "100"
+                    }
+                  },
+                  "type": "account"
+                },
+                "program": "spl-token",
+                "space": 165
+              },
+              "executable": false,
+              "lamports": 2039280,
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "rentEpoch": 18446744073709552000,
+              "space": 165
+            },
+            {
+              "data": {
+                "parsed": {
+                  "info": {
+                    "isNative": false,
+                    "mint": "5T8rAqFD4cBJR1gPXxHXKDNxmFW2fCULjfP1Uyhutsmo",
+                    "owner": "FbWLwn25m3cT2W353HXncp4pY7XWCX35xCw85cLAnTa6",
+                    "state": "initialized",
+                    "tokenAmount": {
+                      "amount": "100",
+                      "decimals": 0,
+                      "uiAmount": 100,
+                      "uiAmountString": "100"
+                    }
+                  },
+                  "type": "account"
+                },
+                "program": "spl-token",
+                "space": 165
+              },
+              "executable": false,
+              "lamports": 2039280,
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "rentEpoch": 18446744073709552000,
+              "space": 165
+            }
+          ]
+        },
+        "id": 42
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:16.088Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 43,
+        "method": "getAccountInfo",
+        "params": [
+          "9RXnJSL25LAqr6PnS86gkyhiHhrBfp5dhubeC48o7Uyv",
+          {
+            "commitment": "finalized",
+            "encoding": "jsonParsed",
+            "minContextSlot": 59
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 59
+          },
+          "value": {
+            "data": {
+              "parsed": {
+                "info": {
+                  "isNative": false,
+                  "mint": "5T8rAqFD4cBJR1gPXxHXKDNxmFW2fCULjfP1Uyhutsmo",
+                  "owner": "FbWLwn25m3cT2W353HXncp4pY7XWCX35xCw85cLAnTa6",
+                  "state": "initialized",
+                  "tokenAmount": {
+                    "amount": "100",
+                    "decimals": 0,
+                    "uiAmount": 100,
+                    "uiAmountString": "100"
+                  }
+                },
+                "type": "account"
+              },
+              "program": "spl-token",
+              "space": 165
+            },
+            "executable": false,
+            "lamports": 2039280,
+            "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "rentEpoch": 18446744073709552000,
+            "space": 165
+          }
+        },
+        "id": 43
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:16.089Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 44,
+        "method": "getLatestBlockhash",
+        "params": [
+          {
+            "commitment": "finalized"
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 59
+          },
+          "value": {
+            "blockhash": "2QpsFXirPNzPyDjNsLi7k7Evm19jdcGN2bPDbhmFKJJ5",
+            "lastValidBlockHeight": 209
+          }
+        },
+        "id": 44
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:16.091Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 45,
+        "method": "sendTransaction",
+        "params": [
+          "ARxEUwjcFFxtczOQ5KYrNY8B6nd9lRICArEZu/JHPgbzoTFYBjA6MEGqE0T294OTq7J8tkkLxLoJzAMp3C/LXw8BAAIF2NqLL60eFoN9BLz2Bp7d8i1NClLjTiOV8gDXYiXtkl99Jj0ziL6wRxtxhJOfXlRDXwaLdIOdhAP1eTXva4UsIYUWY04ki+xgmBShlcz+2sNn8QtztdFZ7FeFdlub+fHpQiC443cluL/Smybhy9p7bODY7ZYBEnLY/EDrAnGGhuYG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqRT2KxFMIfonlOPvPvt9sULjsOoZJrDWTNABt7Jyzi9yAQQEAQMCAAoMCgAAAAAAAAAA",
+          {
+            "encoding": "base64",
+            "preflightCommitment": "finalized",
+            "skipPreflight": false,
+            "maxRetries": 3
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": "Zn9i9vtfMxuxM8iSzXJ8oapGNc5n7RvmkJTqpCngfo3dKfuJY1uA16QJXAdKFu7fzrZSnGcQtmZchKB3x2oD2Wz",
+        "id": 45
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:16.092Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 46,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "Zn9i9vtfMxuxM8iSzXJ8oapGNc5n7RvmkJTqpCngfo3dKfuJY1uA16QJXAdKFu7fzrZSnGcQtmZchKB3x2oD2Wz"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 90
+          },
+          "value": [
+            null
+          ]
+        },
+        "id": 46
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:17.094Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 47,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "Zn9i9vtfMxuxM8iSzXJ8oapGNc5n7RvmkJTqpCngfo3dKfuJY1uA16QJXAdKFu7fzrZSnGcQtmZchKB3x2oD2Wz"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 92
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 2,
+              "err": null,
+              "slot": 91,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 47
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:18.095Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 48,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "Zn9i9vtfMxuxM8iSzXJ8oapGNc5n7RvmkJTqpCngfo3dKfuJY1uA16QJXAdKFu7fzrZSnGcQtmZchKB3x2oD2Wz"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 94
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 4,
+              "err": null,
+              "slot": 91,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 48
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:19.096Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 49,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "Zn9i9vtfMxuxM8iSzXJ8oapGNc5n7RvmkJTqpCngfo3dKfuJY1uA16QJXAdKFu7fzrZSnGcQtmZchKB3x2oD2Wz"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 96
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 6,
+              "err": null,
+              "slot": 91,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 49
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:20.098Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 50,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "Zn9i9vtfMxuxM8iSzXJ8oapGNc5n7RvmkJTqpCngfo3dKfuJY1uA16QJXAdKFu7fzrZSnGcQtmZchKB3x2oD2Wz"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 98
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 8,
+              "err": null,
+              "slot": 91,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 50
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:21.099Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 51,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "Zn9i9vtfMxuxM8iSzXJ8oapGNc5n7RvmkJTqpCngfo3dKfuJY1uA16QJXAdKFu7fzrZSnGcQtmZchKB3x2oD2Wz"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 100
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 10,
+              "err": null,
+              "slot": 91,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 51
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:22.100Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 52,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "Zn9i9vtfMxuxM8iSzXJ8oapGNc5n7RvmkJTqpCngfo3dKfuJY1uA16QJXAdKFu7fzrZSnGcQtmZchKB3x2oD2Wz"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 102
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 12,
+              "err": null,
+              "slot": 91,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 52
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:23.100Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 53,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "Zn9i9vtfMxuxM8iSzXJ8oapGNc5n7RvmkJTqpCngfo3dKfuJY1uA16QJXAdKFu7fzrZSnGcQtmZchKB3x2oD2Wz"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 104
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 14,
+              "err": null,
+              "slot": 91,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 53
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:24.102Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 54,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "Zn9i9vtfMxuxM8iSzXJ8oapGNc5n7RvmkJTqpCngfo3dKfuJY1uA16QJXAdKFu7fzrZSnGcQtmZchKB3x2oD2Wz"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 106
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 16,
+              "err": null,
+              "slot": 91,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 54
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:25.103Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 55,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "Zn9i9vtfMxuxM8iSzXJ8oapGNc5n7RvmkJTqpCngfo3dKfuJY1uA16QJXAdKFu7fzrZSnGcQtmZchKB3x2oD2Wz"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 108
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 18,
+              "err": null,
+              "slot": 91,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 55
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:26.104Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 56,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "Zn9i9vtfMxuxM8iSzXJ8oapGNc5n7RvmkJTqpCngfo3dKfuJY1uA16QJXAdKFu7fzrZSnGcQtmZchKB3x2oD2Wz"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 110
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 20,
+              "err": null,
+              "slot": 91,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 56
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:27.105Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 57,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "Zn9i9vtfMxuxM8iSzXJ8oapGNc5n7RvmkJTqpCngfo3dKfuJY1uA16QJXAdKFu7fzrZSnGcQtmZchKB3x2oD2Wz"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 113
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 23,
+              "err": null,
+              "slot": 91,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 57
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:28.107Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 58,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "Zn9i9vtfMxuxM8iSzXJ8oapGNc5n7RvmkJTqpCngfo3dKfuJY1uA16QJXAdKFu7fzrZSnGcQtmZchKB3x2oD2Wz"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 115
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 25,
+              "err": null,
+              "slot": 91,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 58
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:29.107Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 59,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "Zn9i9vtfMxuxM8iSzXJ8oapGNc5n7RvmkJTqpCngfo3dKfuJY1uA16QJXAdKFu7fzrZSnGcQtmZchKB3x2oD2Wz"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 117
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 27,
+              "err": null,
+              "slot": 91,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 59
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:30.108Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 60,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "Zn9i9vtfMxuxM8iSzXJ8oapGNc5n7RvmkJTqpCngfo3dKfuJY1uA16QJXAdKFu7fzrZSnGcQtmZchKB3x2oD2Wz"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 119
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 29,
+              "err": null,
+              "slot": 91,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 60
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:31.108Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 61,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "Zn9i9vtfMxuxM8iSzXJ8oapGNc5n7RvmkJTqpCngfo3dKfuJY1uA16QJXAdKFu7fzrZSnGcQtmZchKB3x2oD2Wz"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 121
+          },
+          "value": [
+            {
+              "confirmationStatus": "confirmed",
+              "confirmations": 31,
+              "err": null,
+              "slot": 91,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 61
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:32.109Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 62,
+        "method": "getSignatureStatuses",
+        "params": [
+          [
+            "Zn9i9vtfMxuxM8iSzXJ8oapGNc5n7RvmkJTqpCngfo3dKfuJY1uA16QJXAdKFu7fzrZSnGcQtmZchKB3x2oD2Wz"
+          ],
+          {
+            "searchTransactionHistory": true
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 123
+          },
+          "value": [
+            {
+              "confirmationStatus": "finalized",
+              "confirmations": null,
+              "err": null,
+              "slot": 91,
+              "status": {
+                "Ok": null
+              }
+            }
+          ]
+        },
+        "id": 62
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:32.110Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 63,
+        "method": "getAccountInfo",
+        "params": [
+          "9xX2P1cFdmWgYTC6W4cHeHfEH4NVwgnWR13s6MenNNQ8",
+          {
+            "commitment": "finalized",
+            "encoding": "jsonParsed",
+            "minContextSlot": 91
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 92
+          },
+          "value": {
+            "data": {
+              "parsed": {
+                "info": {
+                  "isNative": false,
+                  "mint": "5T8rAqFD4cBJR1gPXxHXKDNxmFW2fCULjfP1Uyhutsmo",
+                  "owner": "FbWLwn25m3cT2W353HXncp4pY7XWCX35xCw85cLAnTa6",
+                  "state": "initialized",
+                  "tokenAmount": {
+                    "amount": "110",
+                    "decimals": 0,
+                    "uiAmount": 110,
+                    "uiAmountString": "110"
+                  }
+                },
+                "type": "account"
+              },
+              "program": "spl-token",
+              "space": 165
+            },
+            "executable": false,
+            "lamports": 2039280,
+            "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "rentEpoch": 18446744073709552000,
+            "space": 165
+          }
+        },
+        "id": 63
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:32.111Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 64,
+        "method": "getMultipleAccounts",
+        "params": [
+          [
+            "9RXnJSL25LAqr6PnS86gkyhiHhrBfp5dhubeC48o7Uyv",
+            "9xX2P1cFdmWgYTC6W4cHeHfEH4NVwgnWR13s6MenNNQ8"
+          ],
+          {
+            "commitment": "finalized",
+            "encoding": "jsonParsed",
+            "minContextSlot": 91
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 92
+          },
+          "value": [
+            {
+              "data": {
+                "parsed": {
+                  "info": {
+                    "isNative": false,
+                    "mint": "5T8rAqFD4cBJR1gPXxHXKDNxmFW2fCULjfP1Uyhutsmo",
+                    "owner": "FbWLwn25m3cT2W353HXncp4pY7XWCX35xCw85cLAnTa6",
+                    "state": "initialized",
+                    "tokenAmount": {
+                      "amount": "90",
+                      "decimals": 0,
+                      "uiAmount": 90,
+                      "uiAmountString": "90"
+                    }
+                  },
+                  "type": "account"
+                },
+                "program": "spl-token",
+                "space": 165
+              },
+              "executable": false,
+              "lamports": 2039280,
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "rentEpoch": 18446744073709552000,
+              "space": 165
+            },
+            {
+              "data": {
+                "parsed": {
+                  "info": {
+                    "isNative": false,
+                    "mint": "5T8rAqFD4cBJR1gPXxHXKDNxmFW2fCULjfP1Uyhutsmo",
+                    "owner": "FbWLwn25m3cT2W353HXncp4pY7XWCX35xCw85cLAnTa6",
+                    "state": "initialized",
+                    "tokenAmount": {
+                      "amount": "110",
+                      "decimals": 0,
+                      "uiAmount": 110,
+                      "uiAmountString": "110"
+                    }
+                  },
+                  "type": "account"
+                },
+                "program": "spl-token",
+                "space": 165
+              },
+              "executable": false,
+              "lamports": 2039280,
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "rentEpoch": 18446744073709552000,
+              "space": 165
+            }
+          ]
+        },
+        "id": 64
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:32.111Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 65,
+        "method": "getTransaction",
+        "params": [
+          "Zn9i9vtfMxuxM8iSzXJ8oapGNc5n7RvmkJTqpCngfo3dKfuJY1uA16QJXAdKFu7fzrZSnGcQtmZchKB3x2oD2Wz",
+          {
+            "commitment": "finalized",
+            "encoding": "json",
+            "maxSupportedTransactionVersion": 0
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "blockTime": 1793656635,
+          "meta": {
+            "computeUnitsConsumed": 105,
+            "costUnits": 1759,
+            "err": null,
+            "fee": 5000,
+            "innerInstructions": [],
+            "loadedAddresses": {
+              "readonly": [],
+              "writable": []
+            },
+            "logMessages": [
+              "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+              "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 200000 compute units",
+              "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success"
+            ],
+            "postBalances": [
+              994434840,
+              2039280,
+              2039280,
+              1461600,
+              1141440
+            ],
+            "postTokenBalances": [
+              {
+                "accountIndex": 1,
+                "mint": "5T8rAqFD4cBJR1gPXxHXKDNxmFW2fCULjfP1Uyhutsmo",
+                "owner": "FbWLwn25m3cT2W353HXncp4pY7XWCX35xCw85cLAnTa6",
+                "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "uiTokenAmount": {
+                  "amount": "90",
+                  "decimals": 0,
+                  "uiAmount": 90,
+                  "uiAmountString": "90"
+                }
+              },
+              {
+                "accountIndex": 2,
+                "mint": "5T8rAqFD4cBJR1gPXxHXKDNxmFW2fCULjfP1Uyhutsmo",
+                "owner": "FbWLwn25m3cT2W353HXncp4pY7XWCX35xCw85cLAnTa6",
+                "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "uiTokenAmount": {
+                  "amount": "110",
+                  "decimals": 0,
+                  "uiAmount": 110,
+                  "uiAmountString": "110"
+                }
+              }
+            ],
+            "preBalances": [
+              994439840,
+              2039280,
+              2039280,
+              1461600,
+              1141440
+            ],
+            "preTokenBalances": [
+              {
+                "accountIndex": 1,
+                "mint": "5T8rAqFD4cBJR1gPXxHXKDNxmFW2fCULjfP1Uyhutsmo",
+                "owner": "FbWLwn25m3cT2W353HXncp4pY7XWCX35xCw85cLAnTa6",
+                "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "uiTokenAmount": {
+                  "amount": "100",
+                  "decimals": 0,
+                  "uiAmount": 100,
+                  "uiAmountString": "100"
+                }
+              },
+              {
+                "accountIndex": 2,
+                "mint": "5T8rAqFD4cBJR1gPXxHXKDNxmFW2fCULjfP1Uyhutsmo",
+                "owner": "FbWLwn25m3cT2W353HXncp4pY7XWCX35xCw85cLAnTa6",
+                "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "uiTokenAmount": {
+                  "amount": "100",
+                  "decimals": 0,
+                  "uiAmount": 100,
+                  "uiAmountString": "100"
+                }
+              }
+            ],
+            "rewards": [],
+            "status": {
+              "Ok": null
+            }
+          },
+          "slot": 91,
+          "transaction": {
+            "message": {
+              "accountKeys": [
+                "FbWLwn25m3cT2W353HXncp4pY7XWCX35xCw85cLAnTa6",
+                "9RXnJSL25LAqr6PnS86gkyhiHhrBfp5dhubeC48o7Uyv",
+                "9xX2P1cFdmWgYTC6W4cHeHfEH4NVwgnWR13s6MenNNQ8",
+                "5T8rAqFD4cBJR1gPXxHXKDNxmFW2fCULjfP1Uyhutsmo",
+                "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+              ],
+              "header": {
+                "numReadonlySignedAccounts": 0,
+                "numReadonlyUnsignedAccounts": 2,
+                "numRequiredSignatures": 1
+              },
+              "instructions": [
+                {
+                  "accounts": [
+                    1,
+                    3,
+                    2,
+                    0
+                  ],
+                  "data": "gEL9jRtLKLGrK",
+                  "programIdIndex": 4,
+                  "stackHeight": 1
+                }
+              ],
+              "recentBlockhash": "2QpsFXirPNzPyDjNsLi7k7Evm19jdcGN2bPDbhmFKJJ5"
+            },
+            "signatures": [
+              "Zn9i9vtfMxuxM8iSzXJ8oapGNc5n7RvmkJTqpCngfo3dKfuJY1uA16QJXAdKFu7fzrZSnGcQtmZchKB3x2oD2Wz"
+            ]
+          },
+          "transactionIndex": 1,
+          "version": "legacy"
+        },
+        "id": 65
+      }
+    },
+    {
+      "at": "2026-11-02T21:57:32.114Z",
+      "provider": "Local Agave validator",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 66,
+        "method": "getAccountInfo",
+        "params": [
+          "5T8rAqFD4cBJR1gPXxHXKDNxmFW2fCULjfP1Uyhutsmo",
+          {
+            "commitment": "finalized",
+            "encoding": "jsonParsed",
+            "minContextSlot": 91
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "apiVersion": "4.4.0",
+            "slot": 92
+          },
+          "value": {
+            "data": {
+              "parsed": {
+                "info": {
+                  "decimals": 0,
+                  "freezeAuthority": null,
+                  "isInitialized": true,
+                  "mintAuthority": null,
+                  "supply": "200"
+                },
+                "type": "mint"
+              },
+              "program": "spl-token",
+              "space": 82
+            },
+            "executable": false,
+            "lamports": 1461600,
+            "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "rentEpoch": 18446744073709552000,
+            "space": 82
+          }
+        },
+        "id": 66
+      }
+    }
+  ]
+}

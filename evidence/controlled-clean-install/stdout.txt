@@ -1,0 +1,16 @@
+Local Agave validator | finalized | 2026-11-02T22:11:39.177Z
+Test wallet: F9UoETXnMxvCMKXV6BjoYZftowEJwWZgpK4xDydGrTC
+Submitted local-validator transaction: hTrXvYjwrZYhVjxidGjQQwGcTREvdT47nMZ9kDxhPKmdy7Sv1ZMPa78h8ifQweoXbgrtB9mk1X47ajdRpSSzSMW
+Submitted local-validator transaction: 4aE9qj2y9M9TxATMTkGoS6sD3yAU5WfPDWoYr1ngtvET2C12PpMiSCkvC5uzncERUmXziPrFGQVQNAcbEjAS7yqn
+Mint: 91cKRMFNd6RyPVDCk2XXgxUY88R6Mdf9cThKMQEWrpCT
+Account A: 2hNBqfncxH6HFJ8ADRp6gNTnFA3m3SW3UboZe5uFkurD
+Account B: FgUrVcrGhDTN8qsRJR3QjEciqFGw9yQiPYMcJxgo5LeE
+Before: A=100 B=100 total=200 | slot 1888
+Read A before transfer: 100 | slot 1888
+Transfer: 10 tokens A -> B | finalized slot 1920
+Read B after transfer: 110 | slot 1920
+MIXED TOTAL: 100 + 110 = 210
+GROUPED TOTAL: 90 + 110 = 200 | slot 1920
+Transaction metadata: [100,100] -> [90,110]; err=null
+Mint authority revoked; supply=200. All assertions passed.
+Decoded requests and responses: runs/2026-11-02T22-11-39.177Z/controlled-run.json
