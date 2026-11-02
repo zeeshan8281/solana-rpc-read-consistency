@@ -1,0 +1,5 @@
+.env
+.env.*
+.DS_Store
+/token-pair-run.json
+/failed-requests.json

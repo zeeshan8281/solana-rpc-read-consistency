@@ -1,0 +1,5 @@
+{
+  "exitCode": 1,
+  "scriptSha256": "a7a2373860d412a366855f957d21a1bfb90cf3f2f3102d4f9bb26d64f5056003",
+  "test": "Actual Helius HTTP rejection with deliberately invalid credential; log destination occupied by a directory."
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330">
+<rect width="1200" height="330" fill="white"/>
+<text x="36" y="24" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#152536">minContextSlot sets a floor, not an exact snapshot</text>
+<text x="36" y="76" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4c5b69">After commitment selects a Bank, its slot must be at least S.</text>
+<rect x="36" y="134" width="350" height="124" rx="10" fill="#fff0e8" stroke="#a33618" stroke-width="2"/>
+<text x="60" y="151" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#4c5b69">Selected Bank.slot</text>
+<text x="60" y="198" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#a33618">S − 1</text>
+<text x="362" y="204" dominant-baseline="text-before-edge" text-anchor="end" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#a33618">REJECT</text>
+<rect x="425" y="134" width="350" height="124" rx="10" fill="#eaf3fb" stroke="#12568e" stroke-width="2"/>
+<text x="449" y="151" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#4c5b69">Selected Bank.slot</text>
+<text x="449" y="198" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#12568e">S</text>
+<text x="751" y="204" dominant-baseline="text-before-edge" text-anchor="end" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#12568e">PASS FLOOR</text>
+<rect x="814" y="134" width="350" height="124" rx="10" fill="#eaf3fb" stroke="#12568e" stroke-width="2"/>
+<text x="838" y="151" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#4c5b69">Selected Bank.slot</text>
+<text x="838" y="198" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#12568e">S + 1</text>
+<text x="1140" y="204" dominant-baseline="text-before-edge" text-anchor="end" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#12568e">PASS FLOOR</text>
+<text x="36" y="287" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#4c5b69">ILLUSTRATIVE SLOTS · Passing this check does not pin future reads to S.</text>
+</svg>
