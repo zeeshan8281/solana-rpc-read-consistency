@@ -30,16 +30,19 @@ Each run replaces the generated `token-pair-run.json` on success or `failed-requ
 
 ## Recorded results
 
-These are actual captured Helius mainnet responses, not expected-output fixtures. Your slots, balances and timestamps will differ.
+These are actual captured Helius mainnet responses, not expected-output fixtures. Your slots and timestamps will differ; balances may stay the same.
 
 | Run (UTC) | Separate contexts | Grouped context | Both totals, raw USDC units | Floor error | Exit |
 |---|---|---|---|---|---|
 | [2026-11-02 20:21:45](evidence/article-run/token-pair-run.json) | 464627689 / 464627689 | 464627689 | 1975623 | -32016 | 0 |
 | [2026-11-02 20:47:28](evidence/review-run/token-pair-run.json) | 464634887 / 464634887 | 464634888 | 1975623 | -32016 | 0 |
+| [2026-11-02 20:53:42](evidence/clean-clone-run/token-pair-run.json) | 464636657 / 464636657 | 464636658 | 1975623 | -32016 | 0 |
 
-USDC has six decimals, so 1975623 raw units is 1.975623 USDC. Both runs made four RPC requests and produced empty stderr. The second run also illustrates that different evaluation slots can return the same balances.
+USDC has six decimals, so 1975623 raw units is 1.975623 USDC. All three runs made four RPC requests and produced empty stderr. The second run also illustrates that different evaluation slots can return the same balances.
 
 Each evidence directory includes `stdout.txt`, `stderr.txt`, `execution.json` and `token-pair-run.json`. The execution manifest records the source SHA-256. The article's original source is preserved at [evidence/article-run/source.mjs](evidence/article-run/source.mjs). The current [code/read-token-pair.mjs](code/read-token-pair.mjs) adds an explicit amount-string check and preserves the original error if saving failure logs fails; `review-run` validates that revision. Do not treat the original screenshot as evidence of the revised source.
+
+The third run used the README command in a fresh clone of the public repository. Its manifest records the tested commit; its source matches the revised script byte-for-byte. Generated output remained ignored by Git.
 
 ![Actual captured stdout from the original run](figures/03-token-pair-run.jpg)
 

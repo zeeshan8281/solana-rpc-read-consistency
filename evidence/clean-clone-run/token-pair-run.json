@@ -1,0 +1,231 @@
+{
+  "started": "2026-11-02T20:53:42.137Z",
+  "completed": "2026-11-02T20:53:42.625Z",
+  "node": "v24.22.1",
+  "network": "mainnet-beta",
+  "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+  "addresses": [
+    "1113odRAP5wXa8n7NFVBG53XrqWeDrViZu5rSiSsVA3",
+    "11NCSQ2Bm6UZdtDqBeHFcos5eFXT1kJ3jG29qKJCWU"
+  ],
+  "slots": [
+    464636657,
+    464636657,
+    464636658
+  ],
+  "separateTotal": "1975623",
+  "groupedTotal": "1975623",
+  "decimals": 6,
+  "floor": 465636658,
+  "floorError": -32016,
+  "nodeContextSlot": 464636658,
+  "records": [
+    {
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "getAccountInfo",
+        "params": [
+          "1113odRAP5wXa8n7NFVBG53XrqWeDrViZu5rSiSsVA3",
+          {
+            "commitment": "confirmed",
+            "encoding": "jsonParsed"
+          }
+        ]
+      },
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "slot": 464636657,
+            "apiVersion": "4.3.0-alpha.2"
+          },
+          "value": {
+            "lamports": 2039280,
+            "data": {
+              "program": "spl-token",
+              "parsed": {
+                "info": {
+                  "isNative": false,
+                  "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                  "owner": "HJNr4feTNiDn59RCL1pYoARXMFoBEQSmAY7R7Cm21z9T",
+                  "state": "initialized",
+                  "tokenAmount": {
+                    "amount": "170812",
+                    "decimals": 6,
+                    "uiAmount": 0.170812,
+                    "uiAmountString": "0.170812"
+                  }
+                },
+                "type": "account"
+              },
+              "space": 165
+            },
+            "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "executable": false,
+            "rentEpoch": 18446744073709552000,
+            "space": 165
+          }
+        },
+        "id": 1
+      }
+    },
+    {
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "method": "getAccountInfo",
+        "params": [
+          "11NCSQ2Bm6UZdtDqBeHFcos5eFXT1kJ3jG29qKJCWU",
+          {
+            "commitment": "confirmed",
+            "encoding": "jsonParsed"
+          }
+        ]
+      },
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "slot": 464636657,
+            "apiVersion": "4.3.0-alpha.2"
+          },
+          "value": {
+            "lamports": 2039280,
+            "data": {
+              "program": "spl-token",
+              "parsed": {
+                "info": {
+                  "isNative": false,
+                  "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                  "owner": "FRPPBdG4sYCH7EnTMeKFSVLsfzfEUo4PQ1wWCUkzzmuv",
+                  "state": "initialized",
+                  "tokenAmount": {
+                    "amount": "1804811",
+                    "decimals": 6,
+                    "uiAmount": 1.804811,
+                    "uiAmountString": "1.804811"
+                  }
+                },
+                "type": "account"
+              },
+              "space": 165
+            },
+            "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "executable": false,
+            "rentEpoch": 18446744073709552000,
+            "space": 165
+          }
+        },
+        "id": 2
+      }
+    },
+    {
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "method": "getMultipleAccounts",
+        "params": [
+          [
+            "1113odRAP5wXa8n7NFVBG53XrqWeDrViZu5rSiSsVA3",
+            "11NCSQ2Bm6UZdtDqBeHFcos5eFXT1kJ3jG29qKJCWU"
+          ],
+          {
+            "commitment": "confirmed",
+            "encoding": "jsonParsed"
+          }
+        ]
+      },
+      "response": {
+        "jsonrpc": "2.0",
+        "result": {
+          "context": {
+            "slot": 464636658,
+            "apiVersion": "4.3.0-alpha.2"
+          },
+          "value": [
+            {
+              "lamports": 2039280,
+              "data": {
+                "program": "spl-token",
+                "parsed": {
+                  "info": {
+                    "isNative": false,
+                    "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                    "owner": "HJNr4feTNiDn59RCL1pYoARXMFoBEQSmAY7R7Cm21z9T",
+                    "state": "initialized",
+                    "tokenAmount": {
+                      "amount": "170812",
+                      "decimals": 6,
+                      "uiAmount": 0.170812,
+                      "uiAmountString": "0.170812"
+                    }
+                  },
+                  "type": "account"
+                },
+                "space": 165
+              },
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "executable": false,
+              "rentEpoch": 18446744073709552000,
+              "space": 165
+            },
+            {
+              "lamports": 2039280,
+              "data": {
+                "program": "spl-token",
+                "parsed": {
+                  "info": {
+                    "isNative": false,
+                    "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                    "owner": "FRPPBdG4sYCH7EnTMeKFSVLsfzfEUo4PQ1wWCUkzzmuv",
+                    "state": "initialized",
+                    "tokenAmount": {
+                      "amount": "1804811",
+                      "decimals": 6,
+                      "uiAmount": 1.804811,
+                      "uiAmountString": "1.804811"
+                    }
+                  },
+                  "type": "account"
+                },
+                "space": 165
+              },
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "executable": false,
+              "rentEpoch": 18446744073709552000,
+              "space": 165
+            }
+          ]
+        },
+        "id": 3
+      }
+    },
+    {
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "method": "getAccountInfo",
+        "params": [
+          "1113odRAP5wXa8n7NFVBG53XrqWeDrViZu5rSiSsVA3",
+          {
+            "commitment": "confirmed",
+            "encoding": "jsonParsed",
+            "minContextSlot": 465636658
+          }
+        ]
+      },
+      "response": {
+        "jsonrpc": "2.0",
+        "error": {
+          "code": -32016,
+          "message": "Minimum context slot has not been reached",
+          "data": {
+            "contextSlot": 464636658
+          }
+        },
+        "id": 4
+      }
+    }
+  ]
+}
