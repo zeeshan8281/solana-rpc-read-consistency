@@ -1,10 +1,10 @@
-# Solana RPC reads: one calculation, one account view
+# When two Solana RPC reads give you the wrong total
 
-A runnable study of `getAccountInfo`, `getMultipleAccounts`, `context.slot` and `minContextSlot`.
+Reading related token accounts correctly with Helius RPC. A runnable study of `getAccountInfo`, `getMultipleAccounts`, `context.slot` and `minContextSlot`.
 
 **A real controlled transfer through Helius devnet reproduces the wrong total: 210 from separate reads, versus 200 from a grouped read.** Public explorer links verify the signed transactions. Two earlier local runs and three separate read-only Helius mainnet checks are retained with their own evidence.
 
-Read the [article](article.md) for the explanation and diagrams. The [source notes](source-notes.md) connect its claims to primary documentation and Agave source.
+Read the [article](article.md) for the explanation and diagrams. The script uses a Helius devnet endpoint for account reads, signed transactions and receipt checks. The [source notes](source-notes.md) connect the explanation to primary documentation and the node implementation; they do not identify the client build behind the Helius endpoint.
 
 ## Run
 
